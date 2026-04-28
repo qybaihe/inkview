@@ -1,0 +1,42 @@
+:root {
+  --ink-bg: #f6f1e6;
+  --ink-paper: #fffaf0;
+  --ink-paper-deep: #eee3d0;
+  --ink-text: #201c18;
+  --ink-muted: #6f675d;
+  --ink-line: #2a2723;
+  --ink-wash: rgba(32, 28, 24, 0.08);
+  --ink-cinnabar: #b64232;
+  --ink-indigo: #2f536f;
+  --ink-jade: #5c7f67;
+  --ink-ochre: #b78642;
+  --ink-gold: #c8a65a;
+}
+
+.ink-paper {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(182, 66, 50, 0.08), transparent 24rem),
+    radial-gradient(circle at 82% 24%, rgba(47, 83, 111, 0.08), transparent 22rem),
+    linear-gradient(135deg, var(--ink-paper), var(--ink-bg));
+  color: var(--ink-text);
+}
+
+.ink-card {
+  background: rgba(255, 250, 240, 0.92);
+  border: 1px solid rgba(42, 39, 35, 0.18);
+  box-shadow: 0 18px 40px rgba(32, 28, 24, 0.08);
+}
+
+.ink-seal {
+  background: var(--ink-cinnabar);
+  color: #fffaf0;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+.ink-brush-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(32, 28, 24, 0.75), transparent);
+  opacity: 0.55;
+}
+

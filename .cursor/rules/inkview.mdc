@@ -1,0 +1,16 @@
+---
+description: Apply InkView to redesign websites into refined modern Chinese ink-wash interfaces.
+globs: ["**/*.{html,css,scss,js,jsx,ts,tsx,vue,svelte,md,mdx}"]
+alwaysApply: false
+---
+
+# InkView Cursor Rule
+
+When the user asks for InkView, water-ink, sumi-e, guofeng, Chinese classical, xuan paper, ink brush, or ancient elegant web styling:
+
+1. Preserve the website's product logic, content priority, accessibility, and interactions.
+2. Use the design system in `docs/design-system.md`.
+3. Select icons from `assets/ink-common-icons/wiki/icon-wiki.tsv`.
+4. Copy selected icons into the target project's static assets before using them.
+5. Avoid heavy red-gold, fantasy/xianxia, fake old-paper grime, low contrast, and decorative clutter.
+

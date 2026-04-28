@@ -1,0 +1,1781 @@
+{
+  "name": "ink-common-icons",
+  "count": 176,
+  "icons": [
+    {
+      "slug": "success-check",
+      "name": "成功勾",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "1",
+      "description": "水墨圆章中的醒目勾形，带淡朱砂印点",
+      "use_when": "成功、完成、确认、已保存",
+      "icon_path": "icons/success-check.png"
+    },
+    {
+      "slug": "warning-burst",
+      "name": "警示",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "2",
+      "description": "墨色爆片托起赭黄感叹符号",
+      "use_when": "提醒、风险、注意事项、轻量警告",
+      "icon_path": "icons/warning-burst.png"
+    },
+    {
+      "slug": "error-cross",
+      "name": "错误叉",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "3",
+      "description": "浓墨交叉笔触压住淡红碎片",
+      "use_when": "失败、错误、不可用、关闭",
+      "icon_path": "icons/error-cross.png"
+    },
+    {
+      "slug": "info-bubble",
+      "name": "信息气泡",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "4",
+      "description": "宣纸气泡与靛蓝小信息符号",
+      "use_when": "说明、提示、辅助信息",
+      "icon_path": "icons/info-bubble.png"
+    },
+    {
+      "slug": "loading-swirl",
+      "name": "加载旋涡",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "5",
+      "description": "环形飞白墨迹形成旋转动势",
+      "use_when": "加载、处理中、等待反馈",
+      "icon_path": "icons/loading-swirl.png"
+    },
+    {
+      "slug": "empty-box",
+      "name": "空盒",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "6",
+      "description": "淡墨打开的空盒与飘散纸片",
+      "use_when": "空状态、暂无内容、列表为空",
+      "icon_path": "icons/empty-box.png"
+    },
+    {
+      "slug": "locked",
+      "name": "锁定",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "7",
+      "description": "粗墨锁头立在浅灰盾形底上",
+      "use_when": "锁定、私密、不可编辑、受保护",
+      "icon_path": "icons/locked.png"
+    },
+    {
+      "slug": "sparkle",
+      "name": "闪光",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "8",
+      "description": "数枚飞白星芒与朱砂点缀",
+      "use_when": "亮点、新功能、强调、装饰",
+      "icon_path": "icons/sparkle.png"
+    },
+    {
+      "slug": "question-help",
+      "name": "帮助问号",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "9",
+      "description": "柔和墨圈中的问号与小印点",
+      "use_when": "帮助、疑问、FAQ、新手提示",
+      "icon_path": "icons/question-help.png"
+    },
+    {
+      "slug": "offline-cloud",
+      "name": "离线云",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "10",
+      "description": "云形墨团被断线划开",
+      "use_when": "离线、断网、未同步、暂不可达",
+      "icon_path": "icons/offline-cloud.png"
+    },
+    {
+      "slug": "sync-arrows",
+      "name": "同步箭头",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "11",
+      "description": "两支水墨循环箭头围住一点",
+      "use_when": "同步、更新、双向刷新",
+      "icon_path": "icons/sync-arrows.png"
+    },
+    {
+      "slug": "verified-seal",
+      "name": "认证印章",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "12",
+      "description": "朱砂印章感圆标与墨色勾形",
+      "use_when": "认证、可信、审核通过、官方标识",
+      "icon_path": "icons/verified-seal.png"
+    },
+    {
+      "slug": "add-plus",
+      "name": "添加",
+      "category": "操作动作",
+      "sheet": "02-actions",
+      "slot": "1",
+      "description": "墨圈中的加号，边缘带飞白",
+      "use_when": "添加、新建、插入、创建",
+      "icon_path": "icons/add-plus.png"
+    },
+    {
+      "slug": "edit-pencil",
+      "name": "编辑",
+      "category": "操作动作",
+      "sheet": "02-actions",
+      "slot": "2",
+      "description": "毛笔形铅笔划过一张小纸",
+      "use_when": "编辑、修改、重写、标注",
+      "icon_path": "icons/edit-pencil.png"
+    },
+    {
+      "slug": "delete-trash",
+      "name": "删除",
+      "category": "操作动作",
+      "sheet": "02-actions",
+      "slot": "3",
+      "description": "墨线垃圾篓与飞散纸屑",
+      "use_when": "删除、清空、移除",
+      "icon_path": "icons/delete-trash.png"
+    },
+    {
+      "slug": "search-magnifier",
+      "name": "搜索",
+      "category": "操作动作",
+      "sheet": "02-actions",
+      "slot": "4",
+      "description": "放大镜扫过几枚墨点",
+      "use_when": "搜索、查找、筛选入口",
+      "icon_path": "icons/search-magnifier.png"
+    },
+    {
+      "slug": "share-arrow",
+      "name": "分享",
+      "category": "操作动作",
+      "sheet": "02-actions",
+      "slot": "5",
+      "description": "水墨箭头从纸片上飞出",
+      "use_when": "分享、转发、导出链接",
+      "icon_path": "icons/share-arrow.png"
+    },
+    {
+      "slug": "download-arrow",
+      "name": "下载",
+      "category": "操作动作",
+      "sheet": "02-actions",
+      "slot": "6",
+      "description": "向下笔触箭头落入浅墨托盘",
+      "use_when": "下载、保存到本地、导入文件",
+      "icon_path": "icons/download-arrow.png"
+    },
+    {
+      "slug": "upload-arrow",
+      "name": "上传",
+      "category": "操作动作",
+      "sheet": "02-actions",
+      "slot": "7",
+      "description": "向上笔触箭头冲入云形墨团",
+      "use_when": "上传、提交、同步到云端",
+      "icon_path": "icons/upload-arrow.png"
+    },
+    {
+      "slug": "refresh-loop",
+      "name": "刷新",
+      "category": "操作动作",
+      "sheet": "02-actions",
+      "slot": "8",
+      "description": "两段环形墨线围成重试符号",
+      "use_when": "刷新、重试、重新加载",
+      "icon_path": "icons/refresh-loop.png"
+    },
+    {
+      "slug": "filter-funnel",
+      "name": "筛选",
+      "category": "操作动作",
+      "sheet": "02-actions",
+      "slot": "9",
+      "description": "漏斗轮廓与三枚沉淀墨点",
+      "use_when": "筛选、过滤、条件选择",
+      "icon_path": "icons/filter-funnel.png"
+    },
+    {
+      "slug": "send-paper-plane",
+      "name": "发送",
+      "category": "操作动作",
+      "sheet": "02-actions",
+      "slot": "10",
+      "description": "宣纸折成纸飞机，拖一笔墨尾",
+      "use_when": "发送、提交、投递、消息发出",
+      "icon_path": "icons/send-paper-plane.png"
+    },
+    {
+      "slug": "copy-sheets",
+      "name": "复制",
+      "category": "操作动作",
+      "sheet": "02-actions",
+      "slot": "11",
+      "description": "两张叠放纸页与淡墨偏移",
+      "use_when": "复制、副本、克隆内容",
+      "icon_path": "icons/copy-sheets.png"
+    },
+    {
+      "slug": "settings-gear",
+      "name": "设置",
+      "category": "操作动作",
+      "sheet": "02-actions",
+      "slot": "12",
+      "description": "手绘齿轮配一枚小朱砂点",
+      "use_when": "设置、偏好、配置、工具入口",
+      "icon_path": "icons/settings-gear.png"
+    },
+    {
+      "slug": "document",
+      "name": "文档",
+      "category": "内容文件",
+      "sheet": "03-content-files",
+      "slot": "1",
+      "description": "单页宣纸文档与折角",
+      "use_when": "文档、说明、文章、页面",
+      "icon_path": "icons/document.png"
+    },
+    {
+      "slug": "folder",
+      "name": "文件夹",
+      "category": "内容文件",
+      "sheet": "03-content-files",
+      "slot": "2",
+      "description": "打开文件夹，边缘有淡墨晕染",
+      "use_when": "文件夹、集合、归档、分类",
+      "icon_path": "icons/folder.png"
+    },
+    {
+      "slug": "note",
+      "name": "便签",
+      "category": "内容文件",
+      "sheet": "03-content-files",
+      "slot": "3",
+      "description": "小便签被一笔图钉固定",
+      "use_when": "笔记、备忘、临时记录",
+      "icon_path": "icons/note.png"
+    },
+    {
+      "slug": "checklist",
+      "name": "清单",
+      "category": "内容文件",
+      "sheet": "03-content-files",
+      "slot": "4",
+      "description": "竖向清单纸与数个勾形墨点",
+      "use_when": "任务清单、步骤、待办",
+      "icon_path": "icons/checklist.png"
+    },
+    {
+      "slug": "calendar-card",
+      "name": "日历卡",
+      "category": "内容文件",
+      "sheet": "03-content-files",
+      "slot": "5",
+      "description": "日历页与朱砂日期圆点",
+      "use_when": "日期、计划、日程",
+      "icon_path": "icons/calendar-card.png"
+    },
+    {
+      "slug": "receipt",
+      "name": "小票",
+      "category": "内容文件",
+      "sheet": "03-content-files",
+      "slot": "6",
+      "description": "撕边小票与几道短墨线",
+      "use_when": "账单、记录、总结、回执",
+      "icon_path": "icons/receipt.png"
+    },
+    {
+      "slug": "bookmark",
+      "name": "书签",
+      "category": "内容文件",
+      "sheet": "03-content-files",
+      "slot": "7",
+      "description": "书签夹在淡墨书页里",
+      "use_when": "收藏、稍后阅读、标记",
+      "icon_path": "icons/bookmark.png"
+    },
+    {
+      "slug": "clipboard",
+      "name": "剪贴板",
+      "category": "内容文件",
+      "sheet": "03-content-files",
+      "slot": "8",
+      "description": "夹板与水墨勾选标记",
+      "use_when": "表单记录、审核、复制内容",
+      "icon_path": "icons/clipboard.png"
+    },
+    {
+      "slug": "archive-box",
+      "name": "归档盒",
+      "category": "内容文件",
+      "sheet": "03-content-files",
+      "slot": "9",
+      "description": "收纳盒与半露出的纸页",
+      "use_when": "归档、收纳、历史记录、仓库",
+      "icon_path": "icons/archive-box.png"
+    },
+    {
+      "slug": "tag-label",
+      "name": "标签",
+      "category": "内容文件",
+      "sheet": "03-content-files",
+      "slot": "10",
+      "description": "吊牌标签与墨绳孔",
+      "use_when": "标签、分类、价格标、关键词",
+      "icon_path": "icons/tag-label.png"
+    },
+    {
+      "slug": "link-chain",
+      "name": "链接",
+      "category": "内容文件",
+      "sheet": "03-content-files",
+      "slot": "11",
+      "description": "两节手绘链环轻轻相扣",
+      "use_when": "链接、关联、引用、外部入口",
+      "icon_path": "icons/link-chain.png"
+    },
+    {
+      "slug": "form-fields",
+      "name": "表单",
+      "category": "内容文件",
+      "sheet": "03-content-files",
+      "slot": "12",
+      "description": "表单纸上的三段短线与勾选框",
+      "use_when": "表单、填写、问卷、资料录入",
+      "icon_path": "icons/form-fields.png"
+    },
+    {
+      "slug": "image-frame",
+      "name": "图片",
+      "category": "媒体创作",
+      "sheet": "04-media-creative",
+      "slot": "1",
+      "description": "山水小画框与淡墨太阳",
+      "use_when": "图片、相册、封面图、视觉素材",
+      "icon_path": "icons/image-frame.png"
+    },
+    {
+      "slug": "video-play",
+      "name": "视频播放",
+      "category": "媒体创作",
+      "sheet": "04-media-creative",
+      "slot": "2",
+      "description": "手绘视频框中的播放三角",
+      "use_when": "视频、播放、预览",
+      "icon_path": "icons/video-play.png"
+    },
+    {
+      "slug": "music-note",
+      "name": "音乐",
+      "category": "媒体创作",
+      "sheet": "04-media-creative",
+      "slot": "3",
+      "description": "飞白音符和节奏墨点",
+      "use_when": "音乐、声音、音频氛围",
+      "icon_path": "icons/music-note.png"
+    },
+    {
+      "slug": "microphone",
+      "name": "麦克风",
+      "category": "媒体创作",
+      "sheet": "04-media-creative",
+      "slot": "4",
+      "description": "麦克风与外扩声波墨线",
+      "use_when": "录音、语音、播客、采访",
+      "icon_path": "icons/microphone.png"
+    },
+    {
+      "slug": "camera",
+      "name": "相机",
+      "category": "媒体创作",
+      "sheet": "04-media-creative",
+      "slot": "5",
+      "description": "相机轮廓与一枚闪光笔触",
+      "use_when": "拍照、截图、上传图片",
+      "icon_path": "icons/camera.png"
+    },
+    {
+      "slug": "palette",
+      "name": "调色盘",
+      "category": "媒体创作",
+      "sheet": "04-media-creative",
+      "slot": "6",
+      "description": "宣纸调色盘、毛笔与颜料点",
+      "use_when": "创作、配色、设计、风格",
+      "icon_path": "icons/palette.png"
+    },
+    {
+      "slug": "crop-frame",
+      "name": "裁剪框",
+      "category": "媒体创作",
+      "sheet": "04-media-creative",
+      "slot": "7",
+      "description": "四角裁剪线压住淡墨纸面",
+      "use_when": "裁剪、编辑图片、构图调整",
+      "icon_path": "icons/crop-frame.png"
+    },
+    {
+      "slug": "magic-wand",
+      "name": "灵感棒",
+      "category": "媒体创作",
+      "sheet": "04-media-creative",
+      "slot": "8",
+      "description": "毛笔魔棒喷出星点和墨花",
+      "use_when": "AI 美化、自动优化、神奇效果",
+      "icon_path": "icons/magic-wand.png"
+    },
+    {
+      "slug": "brush",
+      "name": "毛笔",
+      "category": "媒体创作",
+      "sheet": "04-media-creative",
+      "slot": "9",
+      "description": "斜放毛笔带一抹浓淡墨迹",
+      "use_when": "绘画、书写、风格化、创作工具",
+      "icon_path": "icons/brush.png"
+    },
+    {
+      "slug": "gallery-stack",
+      "name": "图库",
+      "category": "媒体创作",
+      "sheet": "04-media-creative",
+      "slot": "10",
+      "description": "三张叠放画片与山形墨线",
+      "use_when": "图库、多图、作品集、相册",
+      "icon_path": "icons/gallery-stack.png"
+    },
+    {
+      "slug": "scan-frame",
+      "name": "扫描",
+      "category": "媒体创作",
+      "sheet": "04-media-creative",
+      "slot": "11",
+      "description": "四角扫描框围住纸面墨点",
+      "use_when": "扫描、识别、取景、OCR",
+      "icon_path": "icons/scan-frame.png"
+    },
+    {
+      "slug": "caption-card",
+      "name": "字幕卡",
+      "category": "媒体创作",
+      "sheet": "04-media-creative",
+      "slot": "12",
+      "description": "画面卡下方带无字短条",
+      "use_when": "字幕、说明文字、图注、标题区域",
+      "icon_path": "icons/caption-card.png"
+    },
+    {
+      "slug": "user-avatar",
+      "name": "用户头像",
+      "category": "人物社交",
+      "sheet": "05-people-social",
+      "slot": "1",
+      "description": "圆形头像剪影与淡墨状态点",
+      "use_when": "个人、账户、用户资料",
+      "icon_path": "icons/user-avatar.png"
+    },
+    {
+      "slug": "team",
+      "name": "团队",
+      "category": "人物社交",
+      "sheet": "05-people-social",
+      "slot": "2",
+      "description": "三个人形淡墨叠在一起",
+      "use_when": "团队、多人协作、群组",
+      "icon_path": "icons/team.png"
+    },
+    {
+      "slug": "handshake",
+      "name": "握手",
+      "category": "人物社交",
+      "sheet": "05-people-social",
+      "slot": "3",
+      "description": "两只手在墨色圆晕前相握",
+      "use_when": "合作、达成一致、伙伴关系",
+      "icon_path": "icons/handshake.png"
+    },
+    {
+      "slug": "message",
+      "name": "消息气泡",
+      "category": "人物社交",
+      "sheet": "05-people-social",
+      "slot": "4",
+      "description": "两枚对话气泡交叠",
+      "use_when": "聊天、评论、消息、客服",
+      "icon_path": "icons/message.png"
+    },
+    {
+      "slug": "profile-card",
+      "name": "资料卡",
+      "category": "人物社交",
+      "sheet": "05-people-social",
+      "slot": "5",
+      "description": "头像卡片与无字信息短线",
+      "use_when": "资料、名片、成员信息",
+      "icon_path": "icons/profile-card.png"
+    },
+    {
+      "slug": "crown",
+      "name": "皇冠",
+      "category": "人物社交",
+      "sheet": "05-people-social",
+      "slot": "6",
+      "description": "墨线皇冠配金赭淡彩",
+      "use_when": "管理员、主理人、精选身份",
+      "icon_path": "icons/crown.png"
+    },
+    {
+      "slug": "location-pin",
+      "name": "定位",
+      "category": "人物社交",
+      "sheet": "05-people-social",
+      "slot": "7",
+      "description": "地图针与小墨点轨迹",
+      "use_when": "地点、附近、位置标记",
+      "icon_path": "icons/location-pin.png"
+    },
+    {
+      "slug": "globe",
+      "name": "地球",
+      "category": "人物社交",
+      "sheet": "05-people-social",
+      "slot": "8",
+      "description": "圆形地球与环绕墨线",
+      "use_when": "全球、多语言、公开范围",
+      "icon_path": "icons/globe.png"
+    },
+    {
+      "slug": "community-circle",
+      "name": "社区",
+      "category": "人物社交",
+      "sheet": "05-people-social",
+      "slot": "9",
+      "description": "多枚头像点围成圆",
+      "use_when": "社区、圈子、成员网络",
+      "icon_path": "icons/community-circle.png"
+    },
+    {
+      "slug": "mention-at",
+      "name": "提及",
+      "category": "人物社交",
+      "sheet": "05-people-social",
+      "slot": "10",
+      "description": "手绘 @ 形墨线与小气泡",
+      "use_when": "提及、通知某人、用户名",
+      "icon_path": "icons/mention-at.png"
+    },
+    {
+      "slug": "heart",
+      "name": "爱心",
+      "category": "人物社交",
+      "sheet": "05-people-social",
+      "slot": "11",
+      "description": "一笔爱心与淡朱砂晕染",
+      "use_when": "喜欢、收藏、情感化反馈",
+      "icon_path": "icons/heart.png"
+    },
+    {
+      "slug": "gift",
+      "name": "礼物",
+      "category": "人物社交",
+      "sheet": "05-people-social",
+      "slot": "12",
+      "description": "礼盒与飘带的水墨轮廓",
+      "use_when": "奖励、福利、礼包、惊喜",
+      "icon_path": "icons/gift.png"
+    },
+    {
+      "slug": "wallet",
+      "name": "钱包",
+      "category": "商业工作",
+      "sheet": "06-commerce-work",
+      "slot": "1",
+      "description": "钱包与一枚半露出的圆币",
+      "use_when": "钱包、余额、付款入口",
+      "icon_path": "icons/wallet.png"
+    },
+    {
+      "slug": "cart",
+      "name": "购物车",
+      "category": "商业工作",
+      "sheet": "06-commerce-work",
+      "slot": "2",
+      "description": "手绘购物车与两枚墨轮",
+      "use_when": "购物、加入购物车、采购",
+      "icon_path": "icons/cart.png"
+    },
+    {
+      "slug": "credit-card",
+      "name": "银行卡",
+      "category": "商业工作",
+      "sheet": "06-commerce-work",
+      "slot": "3",
+      "description": "无字卡片与圆角墨线",
+      "use_when": "支付、银行卡、订阅、结算",
+      "icon_path": "icons/credit-card.png"
+    },
+    {
+      "slug": "package-box",
+      "name": "包裹",
+      "category": "商业工作",
+      "sheet": "06-commerce-work",
+      "slot": "4",
+      "description": "纸箱包裹和淡墨胶带",
+      "use_when": "包裹、物流、商品、交付",
+      "icon_path": "icons/package-box.png"
+    },
+    {
+      "slug": "chart-up",
+      "name": "增长图",
+      "category": "商业工作",
+      "sheet": "06-commerce-work",
+      "slot": "5",
+      "description": "上升折线穿过淡墨柱形",
+      "use_when": "数据、增长、趋势、报表",
+      "icon_path": "icons/chart-up.png"
+    },
+    {
+      "slug": "target",
+      "name": "目标",
+      "category": "商业工作",
+      "sheet": "06-commerce-work",
+      "slot": "6",
+      "description": "靶心圆与一支短箭",
+      "use_when": "目标、KPI、命中、聚焦",
+      "icon_path": "icons/target.png"
+    },
+    {
+      "slug": "briefcase",
+      "name": "公文包",
+      "category": "商业工作",
+      "sheet": "06-commerce-work",
+      "slot": "7",
+      "description": "小公文包与浅赭提手",
+      "use_when": "工作、商务、项目、职业",
+      "icon_path": "icons/briefcase.png"
+    },
+    {
+      "slug": "ticket",
+      "name": "票券",
+      "category": "商业工作",
+      "sheet": "06-commerce-work",
+      "slot": "8",
+      "description": "撕边票券与圆孔",
+      "use_when": "门票、凭证、活动入场",
+      "icon_path": "icons/ticket.png"
+    },
+    {
+      "slug": "coupon",
+      "name": "优惠券",
+      "category": "商业工作",
+      "sheet": "06-commerce-work",
+      "slot": "9",
+      "description": "带虚线边的折角券",
+      "use_when": "优惠、折扣、兑换码、促销",
+      "icon_path": "icons/coupon.png"
+    },
+    {
+      "slug": "invoice",
+      "name": "发票",
+      "category": "商业工作",
+      "sheet": "06-commerce-work",
+      "slot": "10",
+      "description": "长票据与几道短墨线",
+      "use_when": "发票、账单、报销、财务记录",
+      "icon_path": "icons/invoice.png"
+    },
+    {
+      "slug": "storefront",
+      "name": "店铺",
+      "category": "商业工作",
+      "sheet": "06-commerce-work",
+      "slot": "11",
+      "description": "小店门面与卷帘檐",
+      "use_when": "店铺、市场、商家、服务点",
+      "icon_path": "icons/storefront.png"
+    },
+    {
+      "slug": "award-medal",
+      "name": "奖章",
+      "category": "商业工作",
+      "sheet": "06-commerce-work",
+      "slot": "12",
+      "description": "圆形奖章与短缎带",
+      "use_when": "奖项、成就、认证、荣誉",
+      "icon_path": "icons/award-medal.png"
+    },
+    {
+      "slug": "clock",
+      "name": "时钟",
+      "category": "时间地点",
+      "sheet": "07-time-place",
+      "slot": "1",
+      "description": "圆形时钟与几道速度墨线",
+      "use_when": "时间、截止、提醒",
+      "icon_path": "icons/clock.png"
+    },
+    {
+      "slug": "hourglass",
+      "name": "沙漏",
+      "category": "时间地点",
+      "sheet": "07-time-place",
+      "slot": "2",
+      "description": "沙漏和落下的墨砂点",
+      "use_when": "等待、倒计时、耗时",
+      "icon_path": "icons/hourglass.png"
+    },
+    {
+      "slug": "map",
+      "name": "地图",
+      "category": "时间地点",
+      "sheet": "07-time-place",
+      "slot": "3",
+      "description": "折叠地图与一条路线墨线",
+      "use_when": "路线、导航、旅程",
+      "icon_path": "icons/map.png"
+    },
+    {
+      "slug": "home",
+      "name": "首页房子",
+      "category": "时间地点",
+      "sheet": "07-time-place",
+      "slot": "4",
+      "description": "小房子与淡墨屋顶",
+      "use_when": "首页、住所、本地入口",
+      "icon_path": "icons/home.png"
+    },
+    {
+      "slug": "flag",
+      "name": "旗帜",
+      "category": "时间地点",
+      "sheet": "07-time-place",
+      "slot": "5",
+      "description": "旗帜插在小墨丘上",
+      "use_when": "目标、里程碑、标记点",
+      "icon_path": "icons/flag.png"
+    },
+    {
+      "slug": "pin",
+      "name": "图钉",
+      "category": "时间地点",
+      "sheet": "07-time-place",
+      "slot": "6",
+      "description": "图钉扎住一张淡彩纸",
+      "use_when": "固定、置顶、标记重要",
+      "icon_path": "icons/pin.png"
+    },
+    {
+      "slug": "compass",
+      "name": "指南针",
+      "category": "时间地点",
+      "sheet": "07-time-place",
+      "slot": "7",
+      "description": "指南针和方向针笔触",
+      "use_when": "探索、导航、发现方向",
+      "icon_path": "icons/compass.png"
+    },
+    {
+      "slug": "rocket",
+      "name": "火箭",
+      "category": "时间地点",
+      "sheet": "07-time-place",
+      "slot": "8",
+      "description": "火箭冲出一团淡墨烟",
+      "use_when": "启动、发布、快速前进",
+      "icon_path": "icons/rocket.png"
+    },
+    {
+      "slug": "sunrise",
+      "name": "日出",
+      "category": "时间地点",
+      "sheet": "07-time-place",
+      "slot": "9",
+      "description": "地平线上升起朱砂小日",
+      "use_when": "早晨、开始、新一天、希望",
+      "icon_path": "icons/sunrise.png"
+    },
+    {
+      "slug": "moon",
+      "name": "月亮",
+      "category": "时间地点",
+      "sheet": "07-time-place",
+      "slot": "10",
+      "description": "弯月与几枚淡墨星点",
+      "use_when": "夜间、安静模式、晚间场景",
+      "icon_path": "icons/moon.png"
+    },
+    {
+      "slug": "route-path",
+      "name": "路径",
+      "category": "时间地点",
+      "sheet": "07-time-place",
+      "slot": "11",
+      "description": "弯曲路径连接两枚位置点",
+      "use_when": "路线、流程、行程、路径规划",
+      "icon_path": "icons/route-path.png"
+    },
+    {
+      "slug": "train",
+      "name": "列车",
+      "category": "时间地点",
+      "sheet": "07-time-place",
+      "slot": "12",
+      "description": "简化列车头与两道轨迹线",
+      "use_when": "交通、通勤、车票、出行",
+      "icon_path": "icons/train.png"
+    },
+    {
+      "slug": "cloud",
+      "name": "云",
+      "category": "自然装饰",
+      "sheet": "08-nature-decor",
+      "slot": "1",
+      "description": "云形淡墨团与留白边缘",
+      "use_when": "天气、云端、柔和背景",
+      "icon_path": "icons/cloud.png"
+    },
+    {
+      "slug": "leaf",
+      "name": "叶子",
+      "category": "自然装饰",
+      "sheet": "08-nature-decor",
+      "slot": "2",
+      "description": "一片青绿淡彩叶和墨脉",
+      "use_when": "自然、健康、环保、生长",
+      "icon_path": "icons/leaf.png"
+    },
+    {
+      "slug": "mountain",
+      "name": "山",
+      "category": "自然装饰",
+      "sheet": "08-nature-decor",
+      "slot": "3",
+      "description": "两重山形浓淡墨块",
+      "use_when": "山、稳定、远景、探索",
+      "icon_path": "icons/mountain.png"
+    },
+    {
+      "slug": "water-drop",
+      "name": "水滴",
+      "category": "自然装饰",
+      "sheet": "08-nature-decor",
+      "slot": "4",
+      "description": "透明感水滴与墨色边线",
+      "use_when": "水、清洁、湿度、流动",
+      "icon_path": "icons/water-drop.png"
+    },
+    {
+      "slug": "flame",
+      "name": "火焰",
+      "category": "自然装饰",
+      "sheet": "08-nature-decor",
+      "slot": "5",
+      "description": "朱砂火苗与黑色外轮廓",
+      "use_when": "热度、能量、热门、燃烧",
+      "icon_path": "icons/flame.png"
+    },
+    {
+      "slug": "flower",
+      "name": "花",
+      "category": "自然装饰",
+      "sheet": "08-nature-decor",
+      "slot": "6",
+      "description": "五瓣小花与淡粉晕染",
+      "use_when": "美好、柔和、春天、装饰",
+      "icon_path": "icons/flower.png"
+    },
+    {
+      "slug": "wave",
+      "name": "波浪",
+      "category": "自然装饰",
+      "sheet": "08-nature-decor",
+      "slot": "7",
+      "description": "一段飞白水波和小水点",
+      "use_when": "流动、柔和、过渡装饰",
+      "icon_path": "icons/wave.png"
+    },
+    {
+      "slug": "circle-ring",
+      "name": "圆环",
+      "category": "自然装饰",
+      "sheet": "08-nature-decor",
+      "slot": "8",
+      "description": "不规则墨圈与一枚朱砂点",
+      "use_when": "焦点、高亮、背景层次",
+      "icon_path": "icons/circle-ring.png"
+    },
+    {
+      "slug": "dot-cluster",
+      "name": "点阵",
+      "category": "自然装饰",
+      "sheet": "08-nature-decor",
+      "slot": "9",
+      "description": "浓淡不一的墨点聚落",
+      "use_when": "背景点缀、弱装饰、节奏填充",
+      "icon_path": "icons/dot-cluster.png"
+    },
+    {
+      "slug": "ribbon",
+      "name": "飘带",
+      "category": "自然装饰",
+      "sheet": "08-nature-decor",
+      "slot": "10",
+      "description": "水墨飘带带一抹靛蓝",
+      "use_when": "庆祝、引导、装饰、视觉动线",
+      "icon_path": "icons/ribbon.png"
+    },
+    {
+      "slug": "seal-stamp",
+      "name": "印章",
+      "category": "自然装饰",
+      "sheet": "08-nature-decor",
+      "slot": "11",
+      "description": "方形朱砂印章，无可读文字",
+      "use_when": "品牌点缀、确认、东方风格装饰",
+      "icon_path": "icons/seal-stamp.png"
+    },
+    {
+      "slug": "ink-splash",
+      "name": "墨花",
+      "category": "自然装饰",
+      "sheet": "08-nature-decor",
+      "slot": "12",
+      "description": "一团可控墨花与飞散小点",
+      "use_when": "装饰、强调、背景层次、情绪表达",
+      "icon_path": "icons/ink-splash.png"
+    },
+    {
+      "slug": "mail-envelope",
+      "name": "邮件",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "1",
+      "description": "宣纸信封与一枚淡朱砂封点",
+      "use_when": "邮件、私信、收件、联系",
+      "icon_path": "icons/mail-envelope.png"
+    },
+    {
+      "slug": "inbox-tray",
+      "name": "收件箱",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "2",
+      "description": "浅墨托盘接住一张纸页",
+      "use_when": "收件箱、待处理、归入、入口",
+      "icon_path": "icons/inbox-tray.png"
+    },
+    {
+      "slug": "announcement-board",
+      "name": "公告板",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "3",
+      "description": "纸质公告牌被两枚墨钉固定",
+      "use_when": "公告、通知栏、活动信息",
+      "icon_path": "icons/announcement-board.png"
+    },
+    {
+      "slug": "book-open",
+      "name": "打开的书",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "4",
+      "description": "摊开的宣纸书页与淡墨页脊",
+      "use_when": "阅读、教程、知识、文档入口",
+      "icon_path": "icons/book-open.png"
+    },
+    {
+      "slug": "graduation-cap",
+      "name": "学士帽",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "5",
+      "description": "墨线学士帽与小流苏",
+      "use_when": "学习、课程、教育、成长",
+      "icon_path": "icons/graduation-cap.png"
+    },
+    {
+      "slug": "lightbulb",
+      "name": "灯泡灵感",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "6",
+      "description": "灯泡里有淡金墨晕和小星点",
+      "use_when": "灵感、想法、提示、创意",
+      "icon_path": "icons/lightbulb.png"
+    },
+    {
+      "slug": "newspaper",
+      "name": "报纸",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "7",
+      "description": "折叠报纸与无字短线",
+      "use_when": "新闻、资讯、更新、公告摘要",
+      "icon_path": "icons/newspaper.png"
+    },
+    {
+      "slug": "library-shelf",
+      "name": "书架",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "8",
+      "description": "几本竖书靠在浅墨架上",
+      "use_when": "资料库、合集、学习资源",
+      "icon_path": "icons/library-shelf.png"
+    },
+    {
+      "slug": "pen-nib",
+      "name": "钢笔尖",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "9",
+      "description": "钢笔尖与一滴墨",
+      "use_when": "写作、签名、创作、输入",
+      "icon_path": "icons/pen-nib.png"
+    },
+    {
+      "slug": "quote-marks",
+      "name": "引用",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "10",
+      "description": "两枚大号手绘引号与淡墨圈",
+      "use_when": "引用、摘录、评论、语录",
+      "icon_path": "icons/quote-marks.png"
+    },
+    {
+      "slug": "language-bubbles",
+      "name": "语言气泡",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "11",
+      "description": "两枚重叠气泡分别带抽象笔画",
+      "use_when": "翻译、多语言、交流、语言设置",
+      "icon_path": "icons/language-bubbles.png"
+    },
+    {
+      "slug": "mind-map",
+      "name": "思维导图",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "12",
+      "description": "中心墨点连出多个小节点",
+      "use_when": "脑图、关联、知识结构、规划",
+      "icon_path": "icons/mind-map.png"
+    },
+    {
+      "slug": "puzzle-piece",
+      "name": "拼图",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "13",
+      "description": "一块淡墨拼图片",
+      "use_when": "模块、组合、缺失部分、谜题",
+      "icon_path": "icons/puzzle-piece.png"
+    },
+    {
+      "slug": "certificate-scroll",
+      "name": "证书卷轴",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "14",
+      "description": "卷轴证书与无字朱砂印",
+      "use_when": "证书、完成课程、资质、证明",
+      "icon_path": "icons/certificate-scroll.png"
+    },
+    {
+      "slug": "idea-spark",
+      "name": "灵光",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "15",
+      "description": "一束小火花从墨点上弹出",
+      "use_when": "灵感一闪、亮点、推荐想法",
+      "icon_path": "icons/idea-spark.png"
+    },
+    {
+      "slug": "collection-drawer",
+      "name": "资料抽屉",
+      "category": "知识沟通",
+      "sheet": "09-knowledge-comm",
+      "slot": "16",
+      "description": "小抽屉里露出几张纸片",
+      "use_when": "收藏夹、资料收纳、归类",
+      "icon_path": "icons/collection-drawer.png"
+    },
+    {
+      "slug": "key",
+      "name": "钥匙",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "1",
+      "description": "老式钥匙与淡墨尾迹",
+      "use_when": "钥匙、访问、解锁、凭证",
+      "icon_path": "icons/key.png"
+    },
+    {
+      "slug": "fingerprint",
+      "name": "指纹",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "2",
+      "description": "几圈干笔纹形成指纹",
+      "use_when": "指纹、身份验证、生物识别",
+      "icon_path": "icons/fingerprint.png"
+    },
+    {
+      "slug": "face-id",
+      "name": "人脸识别",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "3",
+      "description": "人脸轮廓被四角识别框围住",
+      "use_when": "人脸识别、登录验证、身份确认",
+      "icon_path": "icons/face-id.png"
+    },
+    {
+      "slug": "password-dots",
+      "name": "密码点",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "4",
+      "description": "一排圆点藏在小输入框中",
+      "use_when": "密码、PIN、隐藏输入",
+      "icon_path": "icons/password-dots.png"
+    },
+    {
+      "slug": "shield-alert",
+      "name": "盾牌警示",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "5",
+      "description": "盾形墨片上有小赭黄警示",
+      "use_when": "风险、安全警告、异常保护",
+      "icon_path": "icons/shield-alert.png"
+    },
+    {
+      "slug": "privacy-eye",
+      "name": "可见眼睛",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "6",
+      "description": "单只墨线眼睛与柔和瞳点",
+      "use_when": "可见、查看、隐私状态",
+      "icon_path": "icons/privacy-eye.png"
+    },
+    {
+      "slug": "hidden-eye",
+      "name": "隐藏眼睛",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "7",
+      "description": "眼睛被一笔斜墨线划过",
+      "use_when": "隐藏、不可见、关闭显示",
+      "icon_path": "icons/hidden-eye.png"
+    },
+    {
+      "slug": "safe-box",
+      "name": "保险箱",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "8",
+      "description": "小保险箱与圆形旋钮",
+      "use_when": "保管、保险箱、敏感内容",
+      "icon_path": "icons/safe-box.png"
+    },
+    {
+      "slug": "id-card",
+      "name": "身份卡",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "9",
+      "description": "无字身份卡带头像圆点",
+      "use_when": "身份、实名、证件、资料卡",
+      "icon_path": "icons/id-card.png"
+    },
+    {
+      "slug": "login-door",
+      "name": "登录门",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "10",
+      "description": "门框内有向内箭头",
+      "use_when": "登录、进入、授权入口",
+      "icon_path": "icons/login-door.png"
+    },
+    {
+      "slug": "logout-door",
+      "name": "退出门",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "11",
+      "description": "门框旁有向外箭头",
+      "use_when": "退出、登出、离开账户",
+      "icon_path": "icons/logout-door.png"
+    },
+    {
+      "slug": "permission-badge",
+      "name": "权限徽章",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "12",
+      "description": "小徽章叠在纸质开关旁",
+      "use_when": "权限、角色、授权范围",
+      "icon_path": "icons/permission-badge.png"
+    },
+    {
+      "slug": "encrypted-file",
+      "name": "加密文件",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "13",
+      "description": "文件页上压着小锁",
+      "use_when": "加密、受保护文件、私密资料",
+      "icon_path": "icons/encrypted-file.png"
+    },
+    {
+      "slug": "token-key",
+      "name": "令牌钥匙",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "14",
+      "description": "小令牌牌子连着短钥匙",
+      "use_when": "令牌、验证码、临时凭证",
+      "icon_path": "icons/token-key.png"
+    },
+    {
+      "slug": "firewall-wall",
+      "name": "防火墙",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "15",
+      "description": "几块墨砖墙挡住小火花",
+      "use_when": "防火墙、阻挡、访问控制",
+      "icon_path": "icons/firewall-wall.png"
+    },
+    {
+      "slug": "backup-vault",
+      "name": "备份库",
+      "category": "安全权限",
+      "sheet": "10-security-access",
+      "slot": "16",
+      "description": "圆顶仓库里叠着纸页",
+      "use_when": "备份、安全副本、恢复点",
+      "icon_path": "icons/backup-vault.png"
+    },
+    {
+      "slug": "smartphone",
+      "name": "手机",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "1",
+      "description": "竖向手机与淡墨屏幕",
+      "use_when": "手机、移动端、设备预览",
+      "icon_path": "icons/smartphone.png"
+    },
+    {
+      "slug": "tablet",
+      "name": "平板",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "2",
+      "description": "横向平板与圆角墨框",
+      "use_when": "平板、大屏设备、阅读设备",
+      "icon_path": "icons/tablet.png"
+    },
+    {
+      "slug": "laptop",
+      "name": "笔记本电脑",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "3",
+      "description": "打开的笔记本与淡墨键盘",
+      "use_when": "笔记本、办公、网页端",
+      "icon_path": "icons/laptop.png"
+    },
+    {
+      "slug": "desktop-monitor",
+      "name": "显示器",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "4",
+      "description": "桌面显示器与短支架",
+      "use_when": "桌面端、监控屏、后台",
+      "icon_path": "icons/desktop-monitor.png"
+    },
+    {
+      "slug": "smartwatch",
+      "name": "手表",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "5",
+      "description": "智能手表与圆角表盘",
+      "use_when": "手表、穿戴设备、提醒",
+      "icon_path": "icons/smartwatch.png"
+    },
+    {
+      "slug": "headphones",
+      "name": "耳机",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "6",
+      "description": "头戴耳机与两道声波",
+      "use_when": "耳机、收听、音频设备",
+      "icon_path": "icons/headphones.png"
+    },
+    {
+      "slug": "speaker",
+      "name": "扬声器",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "7",
+      "description": "小音箱发出墨线声波",
+      "use_when": "播放、声音、音量、扬声器",
+      "icon_path": "icons/speaker.png"
+    },
+    {
+      "slug": "printer",
+      "name": "打印机",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "8",
+      "description": "打印机吐出一张无字纸",
+      "use_when": "打印、输出、纸质文件",
+      "icon_path": "icons/printer.png"
+    },
+    {
+      "slug": "scanner-device",
+      "name": "扫描仪",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "9",
+      "description": "扁平扫描仪扫过纸页",
+      "use_when": "扫描仪、扫描文件、录入",
+      "icon_path": "icons/scanner-device.png"
+    },
+    {
+      "slug": "keyboard",
+      "name": "键盘",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "10",
+      "description": "简化键盘与几枚方键",
+      "use_when": "键盘、输入、快捷操作",
+      "icon_path": "icons/keyboard.png"
+    },
+    {
+      "slug": "mouse-device",
+      "name": "鼠标",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "11",
+      "description": "鼠标与一笔连接线",
+      "use_when": "鼠标、点击、指针设备",
+      "icon_path": "icons/mouse-device.png"
+    },
+    {
+      "slug": "gamepad",
+      "name": "手柄",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "12",
+      "description": "游戏手柄与圆点按钮",
+      "use_when": "游戏、控制器、娱乐",
+      "icon_path": "icons/gamepad.png"
+    },
+    {
+      "slug": "battery",
+      "name": "电池",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "13",
+      "description": "电池框里有淡绿电量",
+      "use_when": "电量、续航、充电状态",
+      "icon_path": "icons/battery.png"
+    },
+    {
+      "slug": "wifi-signal",
+      "name": "无线网络",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "14",
+      "description": "三段无线墨弧围住一点",
+      "use_when": "Wi-Fi、网络、连接状态",
+      "icon_path": "icons/wifi-signal.png"
+    },
+    {
+      "slug": "bluetooth-mark",
+      "name": "蓝牙",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "15",
+      "description": "抽象蓝牙符号与靛蓝墨迹",
+      "use_when": "蓝牙、近场连接、配对",
+      "icon_path": "icons/bluetooth-mark.png"
+    },
+    {
+      "slug": "usb-drive",
+      "name": "U盘",
+      "category": "设备工具",
+      "sheet": "11-devices-tools",
+      "slot": "16",
+      "description": "U 盘与小接口墨线",
+      "use_when": "外接存储、导入导出、设备连接",
+      "icon_path": "icons/usb-drive.png"
+    },
+    {
+      "slug": "tea-cup",
+      "name": "茶杯",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "1",
+      "description": "热茶杯与几缕淡墨蒸汽",
+      "use_when": "茶、休息、放松、慢下来",
+      "icon_path": "icons/tea-cup.png"
+    },
+    {
+      "slug": "coffee-cup",
+      "name": "咖啡杯",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "2",
+      "description": "外带杯与温暖赭色杯套",
+      "use_when": "咖啡、提神、饮品",
+      "icon_path": "icons/coffee-cup.png"
+    },
+    {
+      "slug": "bowl",
+      "name": "碗",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "3",
+      "description": "小碗与筷子形短线",
+      "use_when": "餐食、吃饭、食物",
+      "icon_path": "icons/bowl.png"
+    },
+    {
+      "slug": "apple-fruit",
+      "name": "苹果",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "4",
+      "description": "青绿苹果与一片叶",
+      "use_when": "健康、饮食、水果",
+      "icon_path": "icons/apple-fruit.png"
+    },
+    {
+      "slug": "medicine-pill",
+      "name": "药丸",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "5",
+      "description": "两枚胶囊药丸与小墨点",
+      "use_when": "药物、用药、治疗提醒",
+      "icon_path": "icons/medicine-pill.png"
+    },
+    {
+      "slug": "first-aid",
+      "name": "急救箱",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "6",
+      "description": "急救箱与简化十字",
+      "use_when": "急救、医疗、健康安全",
+      "icon_path": "icons/first-aid.png"
+    },
+    {
+      "slug": "heartbeat-line",
+      "name": "心率线",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "7",
+      "description": "心形旁穿过一条心率笔线",
+      "use_when": "心率、健康状态、生命力",
+      "icon_path": "icons/heartbeat-line.png"
+    },
+    {
+      "slug": "yoga-mat",
+      "name": "瑜伽垫",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "8",
+      "description": "卷起的垫子与柔和墨影",
+      "use_when": "瑜伽、伸展、运动放松",
+      "icon_path": "icons/yoga-mat.png"
+    },
+    {
+      "slug": "sleep-pillow",
+      "name": "枕头",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "9",
+      "description": "柔软枕头与小月牙",
+      "use_when": "睡眠、休息、晚安",
+      "icon_path": "icons/sleep-pillow.png"
+    },
+    {
+      "slug": "running-shoe",
+      "name": "跑鞋",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "10",
+      "description": "跑鞋带一笔速度线",
+      "use_when": "跑步、运动、步行",
+      "icon_path": "icons/running-shoe.png"
+    },
+    {
+      "slug": "umbrella",
+      "name": "雨伞",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "11",
+      "description": "半开雨伞与几滴墨雨",
+      "use_when": "天气、保护、雨天",
+      "icon_path": "icons/umbrella.png"
+    },
+    {
+      "slug": "laundry",
+      "name": "洗衣",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "12",
+      "description": "洗衣机圆窗里有水波",
+      "use_when": "洗衣、家务、清洁",
+      "icon_path": "icons/laundry.png"
+    },
+    {
+      "slug": "plant-pot",
+      "name": "盆栽",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "13",
+      "description": "小盆栽长出两片叶",
+      "use_when": "植物、养成、生活装饰",
+      "icon_path": "icons/plant-pot.png"
+    },
+    {
+      "slug": "sofa",
+      "name": "沙发",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "14",
+      "description": "小沙发与淡墨靠垫",
+      "use_when": "居家、休息、客厅",
+      "icon_path": "icons/sofa.png"
+    },
+    {
+      "slug": "bed",
+      "name": "床",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "15",
+      "description": "简化床铺与小枕头",
+      "use_when": "睡觉、卧室、休息",
+      "icon_path": "icons/bed.png"
+    },
+    {
+      "slug": "bath-tub",
+      "name": "浴缸",
+      "category": "生活健康",
+      "sheet": "12-life-health",
+      "slot": "16",
+      "description": "浴缸与一团水汽",
+      "use_when": "洗澡、清洁、放松",
+      "icon_path": "icons/bath-tub.png"
+    },
+    {
+      "slug": "dashboard-gauge",
+      "name": "仪表盘",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "1",
+      "description": "半圆仪表盘与指针",
+      "use_when": "仪表盘、概览、状态监控",
+      "icon_path": "icons/dashboard-gauge.png"
+    },
+    {
+      "slug": "pie-chart",
+      "name": "饼图",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "2",
+      "description": "圆形饼图分出淡彩扇区",
+      "use_when": "占比、统计、数据概览",
+      "icon_path": "icons/pie-chart.png"
+    },
+    {
+      "slug": "bar-chart",
+      "name": "柱状图",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "3",
+      "description": "三根墨色柱与上升点",
+      "use_when": "柱状图、对比、报表",
+      "icon_path": "icons/bar-chart.png"
+    },
+    {
+      "slug": "line-chart",
+      "name": "折线图",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "4",
+      "description": "折线穿过几个数据点",
+      "use_when": "趋势、走势、数据分析",
+      "icon_path": "icons/line-chart.png"
+    },
+    {
+      "slug": "table-grid",
+      "name": "表格",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "5",
+      "description": "方格表格与淡墨边框",
+      "use_when": "表格、清单数据、矩阵",
+      "icon_path": "icons/table-grid.png"
+    },
+    {
+      "slug": "database-stack",
+      "name": "数据库",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "6",
+      "description": "三层圆柱数据堆叠",
+      "use_when": "数据库、数据源、存储",
+      "icon_path": "icons/database-stack.png"
+    },
+    {
+      "slug": "server-rack",
+      "name": "服务器",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "7",
+      "description": "竖向服务器机柜与小灯点",
+      "use_when": "服务器、机房、服务端",
+      "icon_path": "icons/server-rack.png"
+    },
+    {
+      "slug": "data-cloud",
+      "name": "数据云",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "8",
+      "description": "云朵里有小数据节点",
+      "use_when": "云数据、同步存储、云服务",
+      "icon_path": "icons/data-cloud.png"
+    },
+    {
+      "slug": "workflow-nodes",
+      "name": "流程节点",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "9",
+      "description": "多个节点由墨线连接",
+      "use_when": "工作流、自动化、流程编排",
+      "icon_path": "icons/workflow-nodes.png"
+    },
+    {
+      "slug": "timeline",
+      "name": "时间线",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "10",
+      "description": "横线串起几个节点圆点",
+      "use_when": "时间线、版本、进度记录",
+      "icon_path": "icons/timeline.png"
+    },
+    {
+      "slug": "kanban-board",
+      "name": "看板",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "11",
+      "description": "三列小卡片贴在板上",
+      "use_when": "看板、任务状态、项目管理",
+      "icon_path": "icons/kanban-board.png"
+    },
+    {
+      "slug": "notification-bell",
+      "name": "通知铃",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "12",
+      "description": "铃铛带两道震动墨线",
+      "use_when": "通知、提醒、消息入口",
+      "icon_path": "icons/notification-bell.png"
+    },
+    {
+      "slug": "star-rating",
+      "name": "星级",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "13",
+      "description": "主星星旁带几枚小点",
+      "use_when": "评分、推荐、精选",
+      "icon_path": "icons/star-rating.png"
+    },
+    {
+      "slug": "trophy-cup",
+      "name": "奖杯",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "14",
+      "description": "奖杯与淡金墨晕",
+      "use_when": "冠军、成就、排名",
+      "icon_path": "icons/trophy-cup.png"
+    },
+    {
+      "slug": "slider-controls",
+      "name": "滑杆控制",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "15",
+      "description": "三条横向滑杆和圆形旋钮",
+      "use_when": "筛选控制、调节、参数设置",
+      "icon_path": "icons/slider-controls.png"
+    },
+    {
+      "slug": "layers-stack",
+      "name": "图层",
+      "category": "数据系统",
+      "sheet": "13-data-system",
+      "slot": "16",
+      "description": "三层纸片错位叠放",
+      "use_when": "图层、层级、组合视图",
+      "icon_path": "icons/layers-stack.png"
+    }
+  ],
+  "categories": [
+    "人物社交",
+    "内容文件",
+    "商业工作",
+    "媒体创作",
+    "安全权限",
+    "操作动作",
+    "数据系统",
+    "时间地点",
+    "核心状态",
+    "生活健康",
+    "知识沟通",
+    "自然装饰",
+    "设备工具"
+  ]
+}

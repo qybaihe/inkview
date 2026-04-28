@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ink Wash Website"
+  short_description: "Refined ink-wash web redesigns"
+  default_prompt: "Use $ink-wash-website to restyle this website with a refined modern Chinese ink-wash visual system and bundled icons."
+policy:
+  allow_implicit_invocation: true
