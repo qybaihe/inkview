@@ -11,9 +11,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-2f536f.svg)](LICENSE)
 [![Icons](https://img.shields.io/badge/Ink%20Icons-176-b64232.svg)](assets/ink-common-icons/wiki/icon-wiki.tsv)
+[![Text Safe Components](https://img.shields.io/badge/Text--Safe%20Components-40-5c7f67.svg)](assets/ink-text-safe-components/wiki/component-wiki.tsv)
 [![Agent Ready](https://img.shields.io/badge/Agent%20Ready-Codex%20%7C%20Cursor%20%7C%20Claude%20Code-5c7f67.svg)](docs/agent-integration.md)
 
-InkView 是一个可移植的 Agent Skill 与水墨资产库，用于把现有网站、Web App、落地页、仪表盘或原型改造成现代中式水墨风。它内置 176 枚透明 PNG 图标、可复用设计提示词、CSS 设计变量，以及 Codex、Cursor、Claude Code 和通用 AI Coding Agent 的接入方式。
+InkView 是一个可移植的 Agent Skill 与水墨资产库，用于把现有网站、Web App、落地页、仪表盘或原型改造成现代中式水墨风。它内置 176 枚透明 PNG 图标、40 个适合真实 HTML/CSS 文字的 text-safe 组件外壳、可复用设计提示词、CSS 设计变量，以及 Codex、Cursor、Claude Code 和通用 AI Coding Agent 的接入方式。
 
 它的目标很直接：让任何 Agent 都能读取这套规则，理解目标网站的结构，保留产品逻辑和内容层级，然后把界面改造成精致、克制、可用的现代水墨风。
 
@@ -22,6 +23,7 @@ InkView 是一个可移植的 Agent Skill 与水墨资产库，用于把现有�
 - 保留原网站的信息架构、内容层级、转化目标和核心交互。
 - 注入现代水墨视觉系统：宣纸界面、飞白墨线、朱砂印章、青玉与靛蓝点睛。
 - 从内置 `ink-common-icons` Wiki 中按语义选择图标。
+- 当组件包含真实文字、表单、表格、按钮或响应式内容时，从 `ink-text-safe-components` Wiki 中选择文字安全组件外壳。
 - 将图标复制到目标项目自己的静态资源目录，最终网站不依赖本仓库路径。
 - 为 Codex、Cursor、Claude Code 和通用 Agent 提供开箱即用的接入说明。
 - 避免“影楼古风”、页游仙侠、满屏红金、低对比和牺牲可读性的装饰。
@@ -32,11 +34,13 @@ InkView 是一个可移植的 Agent Skill 与水墨资产库，用于把现有�
 inkview/
 ├── assets/
 │   ├── inkview-hero.png
-│   └── ink-common-icons/
+│   ├── ink-common-icons/
 │       ├── icons/                 # 176 枚透明 PNG 图标
 │       ├── sheets/                # 原始生成图标表
 │       ├── wiki/icon-wiki.tsv     # 图标 Wiki 源数据
 │       └── wiki/icon-manifest.json
+│   ├── ink-common-components/     # 展示型/装饰型组件素材
+│   └── ink-text-safe-components/  # 40 个适合真实文字的组件外壳
 ├── skills/ink-wash-website/       # 完整 Codex Skill
 ├── adapters/
 │   ├── cursor/inkview.mdc
@@ -44,6 +48,7 @@ inkview/
 │   └── generic-agent.md
 ├── docs/
 │   ├── agent-integration.md
+│   ├── component-library.md
 │   ├── design-system.md
 │   └── icon-library.md
 ├── examples/
@@ -53,7 +58,10 @@ inkview/
 └── scripts/
     ├── select_icons.py
     ├── copy_icons.py
-    └── build_icon_manifest.py
+    ├── select_components.py
+    ├── copy_components.py
+    ├── build_icon_manifest.py
+    └── build_component_manifest.py
 ```
 
 ## 快速开始
@@ -75,10 +83,22 @@ python scripts/copy_icons.py \
   --manifest
 ```
 
-### 3. 给 Agent 使用这段改造提示词
+### 3. 检索并复制文字安全组件
+
+```bash
+python scripts/select_components.py --query "hero title text" --limit 8
+python scripts/select_components.py --query "表单 输入 评论" --format json
+
+python scripts/copy_components.py \
+  --slugs safe-paper-card safe-input-shell safe-alert-band \
+  --out ./public/ink-components \
+  --manifest
+```
+
+### 4. 给 Agent 使用这段改造提示词
 
 ```text
-保留网站的信息架构、内容优先级、转化目标和核心交互。将视觉系统改造成精致的现代中式水墨风：宣纸界面、干笔墨线、克制的朱砂/青玉/靛蓝/赭石点睛、舒展留白、清晰排版，并从 InkView 内置水墨图标库中选择语义匹配的本地图标。
+保留网站的信息架构、内容优先级、转化目标和核心交互。将视觉系统改造成精致的现代中式水墨风：宣纸界面、干笔墨线、克制的朱砂/青玉/靛蓝/赭石点睛、舒展留白、清晰排版，并选择语义匹配的本地图标和适合真实文案的 text-safe 组件外壳。
 ```
 
 ## Agent 接入
@@ -161,6 +181,7 @@ InkView 不是简单贴古风素材，而是一套产品级水墨视觉语言。
 - 用青玉、靛蓝作为辅助强调、链接和层次。
 - 用飞白分割线、淡墨圆晕营造氛围。
 - 图标按语义使用，不当作背景壁纸铺满页面。
+- 在真实文字区域使用 text-safe 组件外壳，不把文案直接压在装饰型截图素材上。
 
 避免：
 
@@ -190,17 +211,26 @@ InkView 不是简单贴古风素材，而是一套产品级水墨视觉语言。
 
 你可以查看完整 Wiki：[assets/ink-common-icons/wiki/icon-wiki.tsv](assets/ink-common-icons/wiki/icon-wiki.tsv)，读取 JSON manifest：[assets/ink-common-icons/wiki/icon-manifest.json](assets/ink-common-icons/wiki/icon-manifest.json)，或者打开完整预览图：[assets/ink-common-icons/wiki/icon-library-preview.png](assets/ink-common-icons/wiki/icon-library-preview.png)。
 
+## 组件素材库
+
+InkView 现在有两条组件资产轨道：
+
+- 展示型组件：[assets/ink-common-components](assets/ink-common-components)，用于装饰、编辑展示、空状态、Hero 和氛围型 UI。
+- 文字安全组件：[assets/ink-text-safe-components](assets/ink-text-safe-components)，用于真实文案、表单、表格、按钮、提醒、卡片和移动端 UI。
+
+text-safe Wiki 里包含 `text_zone`、`safe_padding` 和 `layer_role`，方便 Agent 判断文字应该放在哪里、至少留多少内边距、PNG 应该作为背景壳还是覆盖框使用。可以查看 Wiki：[assets/ink-text-safe-components/wiki/component-wiki.tsv](assets/ink-text-safe-components/wiki/component-wiki.tsv)，读取 manifest：[assets/ink-text-safe-components/wiki/component-manifest.json](assets/ink-text-safe-components/wiki/component-manifest.json)，或者打开预览图：[assets/ink-text-safe-components/wiki/component-library-preview.png](assets/ink-text-safe-components/wiki/component-library-preview.png)。
+
 ## 推荐 Agent 工作流
 
 1. 检查目标网站的框架、路由、组件和资源管线。
 2. 保留网站功能、内容优先级和可访问性。
 3. 先全局接入 InkView 设计变量，再改具体组件。
 4. 根据页面语义检索图标 Wiki。
-5. 将选中的图标复制到目标项目自己的资源目录。
-6. 只在能提升语义或氛围的位置替换或添加图标。
-7. 检查移动端和桌面端布局、文字对比度、图标路径。
+5. 当真实文字参与排版时，检索 text-safe 组件 Wiki。
+6. 将选中的图标和组件复制到目标项目自己的资源目录。
+7. 只在能提升语义或氛围的位置替换或添加图标。
+8. 检查移动端和桌面端布局、文字对比度、资源路径。
 
 ## License
 
 MIT. See [LICENSE](LICENSE).
-

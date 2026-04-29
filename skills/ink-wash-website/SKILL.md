@@ -1,6 +1,6 @@
 ---
 name: ink-wash-website
-description: "Transform existing or new websites, web apps, landing pages, dashboards, and UI prototypes into a refined modern Chinese ink-wash / guse-guoxiang visual style. Use when Codex is asked to make a site water-ink, sumi-e, Chinese classical, oriental, guofeng, ancient elegant, xuan paper, ink brush, or to apply the bundled ink-common-icons asset library to web UI."
+description: "Transform existing or new websites, web apps, landing pages, dashboards, and UI prototypes into a refined modern Chinese ink-wash / guse-guoxiang visual style. Use when Codex is asked to make a site water-ink, sumi-e, Chinese classical, oriental, guofeng, ancient elegant, xuan paper, ink brush, or to apply the bundled InkView icon and component asset libraries to web UI."
 ---
 
 # Ink Wash Website
@@ -13,10 +13,12 @@ Use this skill to restyle a website into a refined modern Chinese ink-wash exper
 2. Read `references/visual-system.md` before making visual decisions.
 3. Read `references/transformation-prompt.md` when planning the redesign direction or writing implementation notes.
 4. Read `references/icon-usage.md` before selecting or copying bundled icons.
-5. Choose semantically matched icons from `assets/ink-common-icons/wiki/icon-wiki.tsv` or use `scripts/select_icons.py`.
-6. Copy only the icons needed by the target website into its normal static asset folder with `scripts/copy_icons.py`.
-7. Implement the visual system in the site's existing styling stack. Prefer CSS variables, design tokens, and reusable components over page-local one-off styles.
-8. Verify responsive layout, text contrast, icon loading paths, and that the result does not become theme-park antique, fantasy-game, or low-readability decoration.
+5. Read `references/component-usage.md` before using bundled component PNGs, especially on text-heavy UI.
+6. Choose semantically matched icons from `assets/ink-common-icons/wiki/icon-wiki.tsv` or use `scripts/select_icons.py`.
+7. Choose text-safe component shells from `assets/ink-text-safe-components/wiki/component-wiki.tsv` or use `scripts/select_components.py` when live text, tables, forms, buttons, or labels are involved.
+8. Copy only the icons and components needed by the target website into its normal static asset folder with `scripts/copy_icons.py` and `scripts/copy_components.py`.
+9. Implement the visual system in the site's existing styling stack. Prefer CSS variables, design tokens, and reusable components over page-local one-off styles.
+10. Verify responsive layout, text contrast, asset loading paths, and that the result does not become theme-park antique, fantasy-game, or low-readability decoration.
 
 ## Bundled Icon Library
 
@@ -28,6 +30,15 @@ The skill includes `assets/ink-common-icons/`, a 176-icon transparent PNG librar
 - `assets/ink-common-icons/wiki/icon-library-preview.png`: full visual preview.
 
 Use icons as UI-supporting assets: feature cards, empty states, section headers, tool buttons, onboarding steps, help panels, and soft decorative accents. Do not replace every icon mechanically; preserve functional clarity.
+
+## Bundled Component Libraries
+
+The skill includes two component tracks:
+
+- `assets/ink-common-components/`: expressive display and decorative UI component materials.
+- `assets/ink-text-safe-components/`: 40 transparent PNG text-safe shells, frames, and accents designed to work with live HTML/CSS text.
+
+For real website work, prefer `ink-text-safe-components` whenever a component contains copy, data, form values, navigation labels, prices, or responsive content. Use `ink-common-components` for visual storytelling, decorative frames, editorial panels, and non-critical atmosphere.
 
 ## Helper Scripts
 
@@ -54,6 +65,22 @@ python scripts/copy_icons.py \
   --out /path/to/site/public/ink-icons
 ```
 
+Find text-safe component candidates:
+
+```bash
+python scripts/select_components.py --query "hero title text" --limit 8
+python scripts/select_components.py --query "form input textarea" --format json
+```
+
+Copy selected components into a project:
+
+```bash
+python scripts/copy_components.py \
+  --slugs safe-paper-card safe-input-shell safe-alert-band \
+  --out /path/to/site/public/ink-components \
+  --manifest
+```
+
 ## Implementation Rules
 
 - Preserve the user's requested product and UX. Apply ink-wash styling as a design system, not as a content rewrite.
@@ -61,6 +88,7 @@ python scripts/copy_icons.py \
 - Favor rice-paper surfaces, dry-brush borders, subtle ink wash backgrounds, cinnabar seals, jade/indigo accents, and generous breathing room.
 - Avoid heavy red-gold palettes, fake old-paper grime, fantasy/xianxia visuals, excessive calligraphy fonts, low contrast, and decorative clutter.
 - Use local bundled assets after copying them into the project. Do not reference the skill folder directly from a website's runtime code.
+- Use text-safe component PNGs as backgrounds, overlay frames, or accents; keep real text, focus states, validation states, and responsive wrapping in HTML/CSS.
 - If the website already has a strong brand, blend ink-wash materials with the brand instead of replacing all identity.
 - For operational dashboards or dense apps, keep the layout quiet and efficient; use ink icons sparingly for navigation groups, empty states, and high-level modules.
 
@@ -69,6 +97,7 @@ python scripts/copy_icons.py \
 Before finishing:
 
 - Confirm every copied icon path is referenced correctly.
+- Confirm every copied component path is referenced correctly.
 - Confirm pages still work at mobile and desktop widths.
 - Check that text does not overlap icons, seals, brush strokes, or paper textures.
 - If a dev server is appropriate, run it and inspect the result in a browser or screenshot workflow.

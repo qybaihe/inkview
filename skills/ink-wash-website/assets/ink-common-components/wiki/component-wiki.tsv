@@ -1,0 +1,41 @@
+slug	name	category	sheet	slot	description	use_when	component_path
+rice-paper-card	宣纸卡片	纸面容器	01-paper-surfaces	1	圆角宣纸卡片，淡墨边缘和轻微纸层阴影	通用卡片、功能块、内容容器	components/rice-paper-card.png
+torn-scroll-panel	卷轴纸面	纸面容器	01-paper-surfaces	2	横向卷轴式纸面，两端有轻微卷曲	章节标题、长条说明、横幅容器	components/torn-scroll-panel.png
+floating-note-panel	浮动便签面板	纸面容器	01-paper-surfaces	3	轻微倾斜的纸片面板，角上有朱砂点	提示面板、短说明、轻量浮层	components/floating-note-panel.png
+landscape-section-band	山水分区带	纸面容器	01-paper-surfaces	4	宽幅宣纸分区带，底部带淡墨远山	页面分区、Hero 下缘、章节背景	components/landscape-section-band.png
+top-nav-bar	顶部导航条	导航结构	02-navigation	1	横向纸质导航条，左侧印章点，右侧短线占位	网站顶部导航、Header 背板	components/top-nav-bar.png
+side-rail-nav	侧边导航栏	导航结构	02-navigation	2	竖向淡墨导航轨，含多个圆点和短线	后台侧边栏、工具栏、目录	components/side-rail-nav.png
+tab-strip	标签页条	导航结构	02-navigation	3	纸片叠放式标签页条，一枚标签带朱砂强调	Tabs、筛选栏、分类切换	components/tab-strip.png
+breadcrumb-ribbon	面包屑飘带	导航结构	02-navigation	4	细长飘带式路径条，节点以墨点连接	面包屑、步骤路径、小型导航	components/breadcrumb-ribbon.png
+cinnabar-primary-button	朱砂主按钮	控件底座	03-controls	1	朱砂印章感圆角按钮底，无文字	主按钮、CTA、确认按钮	components/cinnabar-primary-button.png
+paper-secondary-button	宣纸次按钮	控件底座	03-controls	2	浅色纸面按钮，黑墨描边和小墨点	次按钮、取消按钮、轻量操作	components/paper-secondary-button.png
+search-input-frame	搜索输入框	控件底座	03-controls	3	横向搜索框底座，左侧放大镜墨迹	搜索框、筛选输入、命令框	components/search-input-frame.png
+toggle-switch-ink	水墨开关	控件底座	03-controls	4	胶囊开关底座，圆形墨钮和青玉状态	开关、设置项、启用禁用	components/toggle-switch-ink.png
+input-field-group	输入框组	表单组件	04-forms	1	两到三行宣纸输入框组，短线占位	表单、登录、设置输入区	components/input-field-group.png
+dropdown-menu-paper	下拉菜单	表单组件	04-forms	2	纸质下拉浮层，带几行选项短线	下拉框、菜单、选择器	components/dropdown-menu-paper.png
+checkbox-list-panel	勾选列表	表单组件	04-forms	3	竖向清单面板，含方框和水墨勾	任务清单、多选项、偏好设置	components/checkbox-list-panel.png
+upload-dropzone	上传投放区	表单组件	04-forms	4	虚线墨框投放区，中心云和上箭头	上传文件、拖拽区域、导入入口	components/upload-dropzone.png
+feature-card	功能卡	内容模块	05-content-blocks	1	带图标圆位、标题短线和说明短线的卡片	功能介绍、产品模块、服务卡片	components/feature-card.png
+article-card	文章卡	内容模块	05-content-blocks	2	图文文章卡，左侧淡墨图位，右侧文本线	博客列表、资讯卡片、内容推荐	components/article-card.png
+profile-card	资料卡	内容模块	05-content-blocks	3	头像圆位、信息短线和小印章的资料卡	个人资料、团队成员、作者卡	components/profile-card.png
+pricing-card	价格卡	内容模块	05-content-blocks	4	价格方案卡，顶部印章位和列表短线	价格方案、会员等级、套餐	components/pricing-card.png
+toast-notification	通知条	反馈浮层	06-feedback	1	轻量横向通知条，左侧状态墨点	提示、成功、错误、保存反馈	components/toast-notification.png
+modal-dialog	弹窗面板	反馈浮层	06-feedback	2	居中的宣纸弹窗，顶部标题线和底部按钮底	弹窗、确认框、对话框	components/modal-dialog.png
+empty-state-panel	空状态面板	反馈浮层	06-feedback	3	空盒图位和说明短线组成的空状态面板	暂无内容、搜索无结果、空列表	components/empty-state-panel.png
+progress-stepper	进度步骤条	反馈浮层	06-feedback	4	横向步骤条，四个墨点由细线连接	流程步骤、进度、入门引导	components/progress-stepper.png
+chart-card	图表卡	数据组件	07-data	1	宣纸数据卡，含折线/柱状淡墨图表	数据看板、趋势图、统计卡	components/chart-card.png
+stats-tile-row	指标卡组	数据组件	07-data	2	三枚小指标卡横排，含数字短线占位	仪表盘指标、概览数据、KPI	components/stats-tile-row.png
+table-frame	表格框架	数据组件	07-data	3	水墨表格框，表头和多行分割线	数据表、列表、管理后台	components/table-frame.png
+kanban-column	看板列	数据组件	07-data	4	单列看板纸面，内部叠放小任务卡	看板、任务流、项目状态	components/kanban-column.png
+hero-title-plate	Hero 标题牌	编辑展示	08-editorial	1	大号标题牌，宣纸底和浓墨装饰线	Hero 标题、页面主视觉文字底	components/hero-title-plate.png
+quote-block	引用块	编辑展示	08-editorial	2	引用卡片，左上大墨引号和正文短线	引用、证言、观点强调	components/quote-block.png
+callout-banner	提示横幅	编辑展示	08-editorial	3	横向 callout 横幅，左侧印章图位	重点提示、公告、文档提示	components/callout-banner.png
+timeline-rail	时间线	编辑展示	08-editorial	4	竖向时间线，墨点节点和纸片说明块	时间线、版本记录、步骤叙述	components/timeline-rail.png
+brush-divider	飞白分割线	装饰框架	09-decor-frames	1	横向飞白墨线，两端自然散开	章节分割、卡片分隔、页脚装饰	components/brush-divider.png
+corner-frame	水墨角框	装饰框架	09-decor-frames	2	四角水墨边框，中间留白	图片框、卡片外框、焦点容器	components/corner-frame.png
+seal-cluster	印章角标组	装饰框架	09-decor-frames	3	几枚朱砂印章和小墨点组合	角标、认证、装饰强调	components/seal-cluster.png
+ink-wash-halo	淡墨光晕	装饰框架	09-decor-frames	4	圆形淡墨晕染，中间留白	背景层、图标底、Hero 装饰	components/ink-wash-halo.png
+phone-screen-frame	手机屏幕框	移动组件	10-mobile	1	手机屏幕纸面框，内有卡片短线	移动端预览、App mockup	components/phone-screen-frame.png
+bottom-tab-bar	底部 Tab 栏	移动组件	10-mobile	2	移动端底部导航条，含四个图标点位	App 底栏、移动导航、TabBar	components/bottom-tab-bar.png
+chat-bubble-group	聊天气泡组	移动组件	10-mobile	3	左右错位的水墨聊天气泡	聊天、评论、客服、对话展示	components/chat-bubble-group.png
+onboarding-panel	引导页卡	移动组件	10-mobile	4	竖向引导卡，图位和三段短线	移动端 onboarding、说明页、欢迎页	components/onboarding-panel.png

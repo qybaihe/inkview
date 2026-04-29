@@ -15,13 +15,14 @@ When the user asks for InkView, water-ink, sumi-e, guofeng, Chinese classical, x
    - restrained cinnabar, jade, indigo, ochre accents
    - readable modern typography
    - semantic local icons from InkView
+   - text-safe component shells for real text areas
 3. Select icons from `assets/ink-common-icons/wiki/icon-wiki.tsv` when this repository is available.
-4. Copy selected icons into the target project's static assets before using them.
-5. Avoid heavy red-gold, fantasy/xianxia, fake old-paper grime, low contrast, and decorative clutter.
+4. Select text-safe components from `assets/ink-text-safe-components/wiki/component-wiki.tsv` for cards, forms, lists, tables, buttons, alerts, and mobile UI that contain live text.
+5. Copy selected icons and components into the target project's static assets before using them.
+6. Avoid heavy red-gold, fantasy/xianxia, fake old-paper grime, low contrast, and decorative clutter.
 
 Recommended prompt:
 
 ```text
-Apply InkView to this website. Preserve functionality and redesign the interface into a refined modern Chinese ink-wash visual system using local icons from the InkView library.
+Apply InkView to this website. Preserve functionality and redesign the interface into a refined modern Chinese ink-wash visual system using local icons and text-safe component shells from the InkView library.
 ```
-

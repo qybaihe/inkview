@@ -8,8 +8,8 @@ Workflow:
 2. Preserve content hierarchy, product logic, and interactions.
 3. Apply the InkView design system from `docs/design-system.md`.
 4. Select semantic icons from `assets/ink-common-icons/wiki/icon-wiki.tsv`.
-5. Copy selected icons into the target project before referencing them.
-6. Verify responsive layout, contrast, and icon paths.
+5. For live text, forms, lists, tables, buttons, and mobile UI, select text-safe shells from `assets/ink-text-safe-components/wiki/component-wiki.tsv`.
+6. Copy selected icons and components into the target project before referencing them.
+7. Verify responsive layout, contrast, text readability, and asset paths.
 
 Avoid heavy red-gold antique styling, fantasy game visuals, low contrast, decorative clutter, and calligraphy fonts in functional UI.
-

@@ -1,0 +1,41 @@
+slug	name	category	sheet	slot	description	use_when	text_zone	safe_padding	layer_role	component_path
+safe-paper-card	文字安全宣纸卡	文本容器	01-text-containers	1	干净宣纸卡片壳，边缘有淡墨和轻微纸层，中央无图案	通用正文卡片、功能说明、设置区	x=12%,y=14%,w=76%,h=70%	24px	background-shell	components/safe-paper-card.png
+safe-section-panel	文字安全分区面板	文本容器	01-text-containers	2	宽幅分区面板，墨色集中在上下边缘，中部可放多行文本	页面分区、章节说明、横向内容块	x=10%,y=18%,w=80%,h=64%	32px	background-shell	components/safe-section-panel.png
+safe-dialog-shell	文字安全弹窗壳	文本容器	01-text-containers	3	弹窗外壳和淡墨角标，内部保持明亮空白	确认弹窗、说明弹窗、设置弹层	x=14%,y=16%,w=72%,h=68%	28px	background-shell	components/safe-dialog-shell.png
+safe-floating-note	文字安全浮动便签	文本容器	01-text-containers	4	轻微倾斜便签纸壳，装饰只在角落	提示便签、短文案、注释	x=14%,y=18%,w=72%,h=64%	24px	background-shell	components/safe-floating-note.png
+safe-hero-title-plate	文字安全 Hero 标题底板	标题承载	02-headings	1	大标题底板，边缘有山水淡墨，中央大面积留白	Hero 标题、页面主标题	x=10%,y=24%,w=80%,h=52%	36px	background-shell	components/safe-hero-title-plate.png
+safe-section-heading-rule	文字安全章节标题线	标题承载	02-headings	2	标题用横向飞白线和小印章位，中部留给文字	章节标题、列表标题、模块标题	x=18%,y=32%,w=64%,h=36%	18px	accent-frame	components/safe-section-heading-rule.png
+safe-label-seal-slot	文字安全标签印章位	标题承载	02-headings	3	朱砂标签外框，无字符，内部可放短标签文字	状态标签、分类标签、徽章	x=18%,y=24%,w=64%,h=52%	12px	background-shell	components/safe-label-seal-slot.png
+safe-page-title-band	文字安全页面标题带	标题承载	02-headings	4	横向标题纸带，淡墨只在两端	页面标题、表单标题、工具页标题	x=12%,y=28%,w=76%,h=44%	28px	background-shell	components/safe-page-title-band.png
+safe-primary-button-shell	文字安全主按钮壳	控件外壳	03-controls	1	朱砂主按钮底，中央干净可放短按钮文字	主按钮、CTA、确认操作	x=18%,y=28%,w=64%,h=44%	12px	background-shell	components/safe-primary-button-shell.png
+safe-secondary-button-shell	文字安全次按钮壳	控件外壳	03-controls	2	宣纸次按钮底，细墨边且无内部纹理	次按钮、取消、轻量操作	x=18%,y=28%,w=64%,h=44%	12px	background-shell	components/safe-secondary-button-shell.png
+safe-chip-frame	文字安全胶囊标签框	控件外壳	03-controls	3	小型胶囊框，边缘点墨，中央空白	筛选标签、状态 chip、短选项	x=18%,y=30%,w=64%,h=40%	10px	background-shell	components/safe-chip-frame.png
+safe-toggle-track	文字安全开关轨道	控件外壳	03-controls	4	开关轨道和圆形滑块区域，留出可叠加状态层	开关、设置项、偏好切换	x=14%,y=28%,w=72%,h=44%	10px	control-shell	components/safe-toggle-track.png
+safe-input-shell	文字安全输入框壳	表单承载	04-forms	1	单行输入框宣纸外壳，内部完全干净	输入框、搜索框、命令框	x=16%,y=32%,w=68%,h=36%	14px	background-shell	components/safe-input-shell.png
+safe-textarea-shell	文字安全多行输入壳	表单承载	04-forms	2	多行文本区域外壳，装饰在外沿	文本域、评论框、备注	x=14%,y=18%,w=72%,h=64%	22px	background-shell	components/safe-textarea-shell.png
+safe-select-shell	文字安全选择框壳	表单承载	04-forms	3	下拉选择框外壳，右侧预留箭头装饰位	选择器、菜单按钮、过滤器	x=14%,y=30%,w=66%,h=40%	14px	background-shell	components/safe-select-shell.png
+safe-form-group-shell	文字安全表单组壳	表单承载	04-forms	4	表单组背景壳，内部可排多个真实字段	登录表单、设置表单、资料编辑	x=12%,y=14%,w=76%,h=72%	28px	background-shell	components/safe-form-group-shell.png
+safe-list-row	文字安全列表行	列表承载	05-lists	1	单条列表行底板，左侧轻图标位，正文区干净	消息列表、设置列表、搜索结果	x=18%,y=24%,w=70%,h=52%	18px	background-shell	components/safe-list-row.png
+safe-list-panel	文字安全列表面板	列表承载	05-lists	2	列表面板外壳，内部不画假分割线	列表容器、通知中心、菜单	x=12%,y=12%,w=76%,h=76%	28px	background-shell	components/safe-list-panel.png
+safe-feature-row-shell	文字安全功能行壳	列表承载	05-lists	3	横向功能介绍行，左侧图标位与右侧文字区分明	功能说明、服务条目、优势列表	x=24%,y=20%,w=64%,h=60%	22px	background-shell	components/safe-feature-row-shell.png
+safe-step-card	文字安全步骤卡	列表承载	05-lists	4	步骤卡外壳，角上有节点装饰，中央留白	流程步骤、教程卡、引导卡	x=14%,y=18%,w=72%,h=64%	24px	background-shell	components/safe-step-card.png
+safe-stat-card	文字安全指标卡	数据承载	06-data	1	指标卡外壳，顶部留给数字，底部留给说明	KPI、统计数字、概览	x=16%,y=16%,w=68%,h=68%	20px	background-shell	components/safe-stat-card.png
+safe-chart-frame	文字安全图表框	数据承载	06-data	2	图表外框和坐标氛围线，内部供真实图表绘制	折线图、柱状图、数据图表	x=12%,y=14%,w=76%,h=68%	26px	overlay-frame	components/safe-chart-frame.png
+safe-table-shell	文字安全表格壳	数据承载	06-data	3	表格容器外壳，不预画密集文本线	数据表、后台列表、记录页	x=10%,y=12%,w=80%,h=76%	30px	background-shell	components/safe-table-shell.png
+safe-dashboard-panel	文字安全看板面板	数据承载	06-data	4	仪表盘区域大壳，边缘有淡墨层次	看板区、分析页、管理后台	x=10%,y=12%,w=80%,h=76%	32px	background-shell	components/safe-dashboard-panel.png
+safe-article-shell	文字安全文章卡壳	内容承载	07-content	1	文章卡外壳，左侧媒体位和右侧正文区留白	博客卡、新闻卡、课程卡	x=38%,y=16%,w=50%,h=68%	24px	background-shell	components/safe-article-shell.png
+safe-media-caption-frame	文字安全图文框	内容承载	07-content	2	图片框和标题说明区分离，文字区少纹理	作品展示、图片说明、案例卡	x=12%,y=64%,w=76%,h=24%	18px	background-shell	components/safe-media-caption-frame.png
+safe-profile-shell	文字安全资料卡壳	内容承载	07-content	3	头像位和资料文字区明确分开	个人资料、作者卡、团队成员	x=34%,y=18%,w=54%,h=62%	22px	background-shell	components/safe-profile-shell.png
+safe-pricing-shell	文字安全价格卡壳	内容承载	07-content	4	价格卡骨架，真实价格与功能项由 HTML 排版	价格方案、会员套餐、订阅页	x=14%,y=14%,w=72%,h=72%	28px	background-shell	components/safe-pricing-shell.png
+safe-toast-shell	文字安全通知壳	反馈承载	08-feedback	1	通知条外壳，左侧状态点，文字区清爽	Toast、保存提示、轻反馈	x=20%,y=26%,w=68%,h=48%	16px	background-shell	components/safe-toast-shell.png
+safe-alert-band	文字安全提醒横幅	反馈承载	08-feedback	2	提醒横幅外壳，强调边在外侧	公告、错误提示、信息提示	x=16%,y=22%,w=72%,h=56%	22px	background-shell	components/safe-alert-band.png
+safe-empty-state-shell	文字安全空状态壳	反馈承载	08-feedback	3	空状态背景壳，上方图标位下方文字区干净	空列表、无搜索结果、欢迎态	x=16%,y=46%,w=68%,h=36%	24px	background-shell	components/safe-empty-state-shell.png
+safe-progress-rail	文字安全进度轨	反馈承载	08-feedback	4	进度节点轨道，不遮挡步骤文字	步骤条、进度、流程导航	x=12%,y=30%,w=76%,h=40%	18px	accent-frame	components/safe-progress-rail.png
+safe-brush-underline	文字安全飞白下划线	文字装饰	09-text-decor	1	可放在标题下方的飞白下划线	标题强调、链接 hover、章节线	x=12%,y=36%,w=76%,h=28%	8px	accent	components/safe-brush-underline.png
+safe-corner-brackets	文字安全角括框	文字装饰	09-text-decor	2	四角水墨括号框，中间完全透明	引用、重点文本、图片/代码框	x=14%,y=16%,w=72%,h=68%	18px	overlay-frame	components/safe-corner-brackets.png
+safe-margin-seal-slot	文字安全页边印章位	文字装饰	09-text-decor	3	小印章位和边注点，主体区留空	页边标签、章节编号、角标	x=20%,y=20%,w=56%,h=56%	10px	accent	components/safe-margin-seal-slot.png
+safe-ink-backdrop	文字安全淡墨背影	文字装饰	09-text-decor	4	极淡墨色背景晕染，中心低干扰	标题背景、Hero 氛围、空状态背景	x=18%,y=22%,w=64%,h=56%	20px	background-accent	components/safe-ink-backdrop.png
+safe-phone-frame	文字安全手机框	移动承载	10-mobile-text	1	移动端手机外框，屏内留白	手机预览、App 展示、移动原型	x=18%,y=12%,w=64%,h=76%	24px	overlay-frame	components/safe-phone-frame.png
+safe-mobile-card-shell	文字安全移动卡片壳	移动承载	10-mobile-text	2	窄屏卡片壳，适合真实移动文案	移动卡片、设置块、列表卡	x=14%,y=14%,w=72%,h=72%	22px	background-shell	components/safe-mobile-card-shell.png
+safe-bottom-bar-shell	文字安全底栏壳	移动承载	10-mobile-text	3	移动底栏背景壳，图标和文字由前端放置	底部导航、移动 TabBar	x=12%,y=30%,w=76%,h=40%	12px	background-shell	components/safe-bottom-bar-shell.png
+safe-chat-bubble-shell	文字安全聊天气泡壳	移动承载	10-mobile-text	4	聊天气泡外壳，内部不含占位线	聊天、评论、对话展示	x=16%,y=20%,w=68%,h=60%	18px	background-shell	components/safe-chat-bubble-shell.png

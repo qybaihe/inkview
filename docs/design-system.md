@@ -42,4 +42,5 @@
 - Forms: high-contrast labels, plain paper inputs, no texture inside inputs.
 - Navigation: simple text plus restrained icons.
 - Empty states: one strong icon, short text, one action.
-
+- Text-heavy UI: use `assets/ink-text-safe-components/` as shells or frames, then place real text with HTML/CSS.
+- Decorative UI: use `assets/ink-common-components/` only when the asset is mainly visual and does not compete with copy.
