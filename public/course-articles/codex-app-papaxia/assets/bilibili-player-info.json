@@ -1,0 +1,246 @@
+{
+    "code": 0,
+    "message": "OK",
+    "ttl": 1,
+    "data": {
+        "aid": 116481979320235,
+        "bvid": "BV1Kk9kBAEJv",
+        "allow_bp": false,
+        "no_share": false,
+        "cid": 37912839956,
+        "max_limit": 3000,
+        "page_no": 1,
+        "has_next": false,
+        "ip_info": {
+            "ip": "120.236.174.230",
+            "zone_ip": " 10.85.140.46",
+            "zone_id": 4227120,
+            "country": "\u4e2d\u56fd",
+            "province": "\u5e7f\u4e1c",
+            "city": "\u5e7f\u5dde"
+        },
+        "login_mid": 0,
+        "login_mid_hash": "",
+        "is_owner": false,
+        "name": "",
+        "permission": "0",
+        "level_info": {
+            "current_level": 0,
+            "current_min": 0,
+            "current_exp": 0,
+            "next_exp": 0,
+            "level_up": 0
+        },
+        "vip": {
+            "type": 0,
+            "status": 0,
+            "due_date": 0,
+            "vip_pay_type": 0,
+            "theme_type": 0,
+            "label": {
+                "path": "",
+                "text": "",
+                "label_theme": "",
+                "text_color": "",
+                "bg_style": 0,
+                "bg_color": "",
+                "border_color": "",
+                "use_img_label": false,
+                "img_label_uri_hans": "",
+                "img_label_uri_hant": "",
+                "img_label_uri_hans_static": "",
+                "img_label_uri_hant_static": "",
+                "label_id": 0,
+                "label_goto": null
+            },
+            "avatar_subscript": 0,
+            "nickname_color": "",
+            "role": 0,
+            "avatar_subscript_url": "",
+            "tv_vip_status": 0,
+            "tv_vip_pay_type": 0,
+            "tv_due_date": 0,
+            "avatar_icon": {
+                "icon_resource": {}
+            },
+            "ott_info": {
+                "vip_type": 0,
+                "pay_type": 0,
+                "pay_channel_id": "",
+                "status": 0,
+                "overdue_time": 0
+            },
+            "super_vip": {
+                "is_super_vip": false
+            }
+        },
+        "answer_status": 0,
+        "block_time": 0,
+        "role": "",
+        "last_play_time": 0,
+        "last_play_cid": 0,
+        "now_time": 1777430973,
+        "online_count": 1,
+        "need_login_subtitle": true,
+        "subtitle": {
+            "allow_submit": false,
+            "lan": "",
+            "lan_doc": "",
+            "subtitles": [],
+            "subtitle_position": null,
+            "font_size_type": 0
+        },
+        "view_points": [
+            {
+                "type": 2,
+                "from": 0,
+                "to": 108,
+                "content": "\u5f15\u8a00",
+                "imgUrl": "http://i0.hdslb.com/bfs/vchapter/37912839956_0.jpg",
+                "logoUrl": "",
+                "team_type": "",
+                "team_name": ""
+            },
+            {
+                "type": 2,
+                "from": 108,
+                "to": 544,
+                "content": "\u57fa\u7840\u4f7f\u7528",
+                "imgUrl": "http://i0.hdslb.com/bfs/vchapter/37912839956_108.jpg",
+                "logoUrl": "",
+                "team_type": "",
+                "team_name": ""
+            },
+            {
+                "type": 2,
+                "from": 544,
+                "to": 718,
+                "content": "\u753b\u56fe",
+                "imgUrl": "http://i0.hdslb.com/bfs/vchapter/37912839956_544.jpg",
+                "logoUrl": "",
+                "team_type": "",
+                "team_name": ""
+            },
+            {
+                "type": 2,
+                "from": 718,
+                "to": 841,
+                "content": "\u8ba1\u5212\u6a21\u5f0f",
+                "imgUrl": "http://i0.hdslb.com/bfs/vchapter/37912839956_718.jpg",
+                "logoUrl": "",
+                "team_type": "",
+                "team_name": ""
+            },
+            {
+                "type": 2,
+                "from": 841,
+                "to": 1182,
+                "content": "\u4ee3\u7801\u7ba1\u7406",
+                "imgUrl": "http://i0.hdslb.com/bfs/vchapter/37912839956_841.jpg",
+                "logoUrl": "",
+                "team_type": "",
+                "team_name": ""
+            },
+            {
+                "type": 2,
+                "from": 1182,
+                "to": 1301,
+                "content": "\u4e91\u7aef\u8fd0\u884c",
+                "imgUrl": "http://i0.hdslb.com/bfs/vchapter/37912839956_1182.jpg",
+                "logoUrl": "",
+                "team_type": "",
+                "team_name": ""
+            },
+            {
+                "type": 2,
+                "from": 1301,
+                "to": 1481,
+                "content": "\u8bb0\u5fc6\u7cfb\u7edf",
+                "imgUrl": "http://i0.hdslb.com/bfs/vchapter/37912839956_1301.jpg",
+                "logoUrl": "",
+                "team_type": "",
+                "team_name": ""
+            },
+            {
+                "type": 2,
+                "from": 1481,
+                "to": 1626,
+                "content": "\u63d2\u4ef6\u81ea\u52a8\u5316",
+                "imgUrl": "http://i0.hdslb.com/bfs/vchapter/37912839956_1481.jpg",
+                "logoUrl": "",
+                "team_type": "",
+                "team_name": ""
+            },
+            {
+                "type": 2,
+                "from": 1626,
+                "to": 1959,
+                "content": "Skills",
+                "imgUrl": "http://i0.hdslb.com/bfs/vchapter/37912839956_1626.jpg",
+                "logoUrl": "",
+                "team_type": "",
+                "team_name": ""
+            },
+            {
+                "type": 2,
+                "from": 1959,
+                "to": 2293,
+                "content": "MCP",
+                "imgUrl": "http://i0.hdslb.com/bfs/vchapter/37912839956_1959.jpg",
+                "logoUrl": "",
+                "team_type": "",
+                "team_name": ""
+            }
+        ],
+        "preview_toast": "\u4e3a\u521b\u4f5c\u4ed8\u8d39\uff0c\u8d2d\u4e70\u89c2\u770b\u5b8c\u6574\u89c6\u9891|\u8d2d\u4e70\u89c2\u770b",
+        "options": {
+            "is_360": false,
+            "without_vip": false
+        },
+        "guide_attention": [
+            {
+                "type": 1,
+                "from": 0,
+                "to": 5,
+                "pos_x": 333.5,
+                "pos_y": 243.75
+            }
+        ],
+        "jump_card": [],
+        "operation_card": [],
+        "online_switch": {
+            "enable_gray_dash_playback": "500",
+            "new_broadcast": "1",
+            "realtime_dm": "1",
+            "subtitle_submit_switch": "1"
+        },
+        "fawkes": {
+            "config_version": 36900,
+            "ff_version": 21289
+        },
+        "show_switch": {
+            "long_progress": false
+        },
+        "bgm_info": null,
+        "toast_block": false,
+        "is_upower_exclusive": false,
+        "is_upower_play": false,
+        "is_ugc_pay_preview": false,
+        "elec_high_level": {
+            "privilege_type": 0,
+            "title": "",
+            "sub_title": "",
+            "show_button": false,
+            "button_text": "",
+            "jump_url": "",
+            "intro": "",
+            "new": false,
+            "question_text": "",
+            "qa_title": ""
+        },
+        "disable_show_up_info": false,
+        "is_upower_exclusive_with_qa": false,
+        "arc_aigc": null,
+        "self_visible": null
+    }
+}

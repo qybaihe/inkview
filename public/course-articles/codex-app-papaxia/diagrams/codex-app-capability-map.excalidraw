@@ -1,0 +1,35 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "elements": [
+    {"type":"ellipse","id":"center","x":390,"y":180,"width":220,"height":110,"strokeColor":"#1e1e1e","backgroundColor":"#d0ebff","fillStyle":"hachure","strokeWidth":3,"roughness":1},
+    {"type":"text","id":"center_t","x":432,"y":210,"width":136,"height":34,"text":"Codex App\n指挥中心","fontSize":22,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"rectangle","id":"basic","x":70,"y":60,"width":190,"height":70,"strokeColor":"#1971c2","backgroundColor":"#a5d8ff","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"basic_t","x":110,"y":80,"width":110,"height":28,"text":"基础使用\n聊天 / 项目","fontSize":17,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"rectangle","id":"plan","x":410,"y":40,"width":180,"height":70,"strokeColor":"#862e9c","backgroundColor":"#f3d9fa","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"plan_t","x":445,"y":61,"width":110,"height":28,"text":"计划模式\n先拆再做","fontSize":17,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"rectangle","id":"git","x":740,"y":60,"width":190,"height":70,"strokeColor":"#e8590c","backgroundColor":"#ffec99","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"git_t","x":782,"y":80,"width":110,"height":28,"text":"代码管理\nDiff / Git","fontSize":17,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"rectangle","id":"cloud","x":80,"y":350,"width":180,"height":70,"strokeColor":"#2f9e44","backgroundColor":"#b2f2bb","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"cloud_t","x":112,"y":371,"width":120,"height":28,"text":"云端运行\n长任务","fontSize":17,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"rectangle","id":"skills","x":410,"y":385,"width":180,"height":70,"strokeColor":"#1971c2","backgroundColor":"#d0ebff","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"skills_t","x":450,"y":406,"width":100,"height":28,"text":"Skills\n专用能力","fontSize":17,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"rectangle","id":"mcp","x":740,"y":350,"width":190,"height":70,"strokeColor":"#1e1e1e","backgroundColor":"#e9ecef","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"mcp_t","x":785,"y":371,"width":105,"height":28,"text":"MCP / 插件\n接外部工具","fontSize":17,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"arrow","id":"ab","from":"center","to":"basic","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"ap","from":"center","to":"plan","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"ag","from":"center","to":"git","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"ac","from":"center","to":"cloud","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"as","from":"center","to":"skills","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"am","from":"center","to":"mcp","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+
+    {"type":"text","id":"note","x":315,"y":510,"width":380,"height":24,"text":"学习顺序：先会安全操作，再学并行、Skills 和自动化。","fontSize":18,"fontFamily":1,"strokeColor":"#495057","textAlign":"center"}
+  ]
+}

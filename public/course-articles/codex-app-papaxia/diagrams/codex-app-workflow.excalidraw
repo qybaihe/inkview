@@ -1,0 +1,39 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "elements": [
+    {"type":"rectangle","id":"idea","x":40,"y":120,"width":160,"height":70,"strokeColor":"#1e1e1e","backgroundColor":"#fff4e6","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"idea_t","x":75,"y":140,"width":95,"height":30,"text":"一个任务","fontSize":20,"fontFamily":1,"strokeColor":"#1e1e1e"},
+
+    {"type":"rectangle","id":"thread","x":260,"y":70,"width":190,"height":80,"strokeColor":"#1971c2","backgroundColor":"#a5d8ff","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"thread_t","x":300,"y":92,"width":110,"height":34,"text":"Thread\n对话上下文","fontSize":18,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"rectangle","id":"project","x":260,"y":200,"width":190,"height":80,"strokeColor":"#2f9e44","backgroundColor":"#b2f2bb","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"project_t","x":300,"y":222,"width":110,"height":34,"text":"Project\n本地文件夹","fontSize":18,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"rectangle","id":"plan","x":520,"y":45,"width":185,"height":65,"strokeColor":"#862e9c","backgroundColor":"#f3d9fa","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"plan_t","x":560,"y":65,"width":110,"height":22,"text":"Plan 先想清楚","fontSize":17,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"rectangle","id":"worktree","x":520,"y":135,"width":185,"height":65,"strokeColor":"#e8590c","backgroundColor":"#ffec99","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"worktree_t","x":548,"y":155,"width":130,"height":22,"text":"Worktree 并行试","fontSize":17,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"rectangle","id":"skills","x":520,"y":225,"width":185,"height":65,"strokeColor":"#1971c2","backgroundColor":"#d0ebff","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"skills_t","x":560,"y":245,"width":110,"height":22,"text":"Skills 调工具","fontSize":17,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"rectangle","id":"review","x":780,"y":85,"width":190,"height":80,"strokeColor":"#1e1e1e","backgroundColor":"#e9ecef","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"review_t","x":820,"y":106,"width":112,"height":34,"text":"Review\n看 diff / 测试","fontSize":18,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"rectangle","id":"ship","x":780,"y":210,"width":190,"height":80,"strokeColor":"#2f9e44","backgroundColor":"#b2f2bb","fillStyle":"hachure","strokeWidth":2,"roughness":1},
+    {"type":"text","id":"ship_t","x":818,"y":232,"width":114,"height":34,"text":"交付\nPR / 页面 / 文档","fontSize":18,"fontFamily":1,"strokeColor":"#1e1e1e","textAlign":"center"},
+
+    {"type":"arrow","id":"a1","from":"idea","to":"thread","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"a2","from":"idea","to":"project","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"a3","from":"thread","to":"plan","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"a4","from":"project","to":"worktree","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"a5","from":"project","to":"skills","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"a6","from":"plan","to":"review","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"a7","from":"worktree","to":"review","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"a8","from":"skills","to":"ship","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1},
+    {"type":"arrow","id":"a9","from":"review","to":"ship","strokeColor":"#1e1e1e","strokeWidth":2,"roughness":1}
+  ]
+}

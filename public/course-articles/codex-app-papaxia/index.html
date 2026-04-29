@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codex App 图文课｜把 AI 编程从聊天窗口变成项目指挥台</title>
+  <style>
+    :root {
+      --ink: #1d2433;
+      --muted: #657084;
+      --line: #dfe5ef;
+      --paper: #fbfcff;
+      --soft: #f2f6fb;
+      --blue: #2f6fed;
+      --green: #1b9a67;
+      --amber: #e79a22;
+      --red: #e15353;
+      --violet: #7357d8;
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; }
+    img { max-width: 100%; height: auto; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.68;
+      overflow-x: hidden;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .hero {
+      min-height: 86vh;
+      display: grid;
+      align-items: end;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.78) 34%, rgba(255,255,255,.08) 70%),
+        url("assets/hero-codex-command-center.png") center right / cover no-repeat;
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-inner {
+      max-width: 1180px;
+      width: 100%;
+      min-width: 0;
+      margin: 0 auto;
+      padding: 64px 28px 88px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.78);
+      color: var(--muted);
+      font-size: 13px;
+      backdrop-filter: blur(8px);
+    }
+    h1 {
+      max-width: 680px;
+      margin: 22px 0 18px;
+      font-size: 72px;
+      line-height: 1.03;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+    .lead {
+      max-width: 690px;
+      margin: 0;
+      font-size: 20px;
+      color: #3d4758;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+      min-width: 0;
+    }
+    .pill {
+      max-width: 100%;
+      min-width: 0;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.8);
+      color: #2f394a;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+      white-space: normal;
+    }
+    main {
+      max-width: 1120px;
+      min-width: 0;
+      margin: 0 auto;
+      padding: 54px 28px 90px;
+    }
+    section { margin: 64px 0; }
+    h2 {
+      margin: 0 0 18px;
+      font-size: 34px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 26px 0 10px;
+      font-size: 22px;
+      line-height: 1.3;
+      letter-spacing: 0;
+    }
+    p { margin: 0 0 14px; }
+    h2, h3, p, th, td { overflow-wrap: anywhere; }
+    .grid {
+      display: grid;
+      gap: 16px;
+      min-width: 0;
+    }
+    .grid.three { grid-template-columns: repeat(3, 1fr); }
+    .grid.two { grid-template-columns: repeat(2, 1fr); }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 20px;
+      background: var(--paper);
+      min-width: 0;
+    }
+    .card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+    .card small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .source-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+      min-width: 0;
+    }
+    .source-shot {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: #f3f5f8;
+      min-width: 0;
+    }
+    .source-shot img {
+      width: 100%;
+      display: block;
+    }
+    .quote {
+      padding: 24px;
+      border-left: 5px solid var(--blue);
+      background: #f5f8ff;
+      border-radius: var(--radius);
+    }
+    .diagram {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 18px;
+      background: #fff;
+      overflow: hidden;
+      min-width: 0;
+    }
+    .diagram img { width: 100%; display: block; }
+    .steps {
+      counter-reset: step;
+      display: grid;
+      gap: 14px;
+    }
+    .step {
+      counter-increment: step;
+      display: grid;
+      grid-template-columns: 46px 1fr;
+      gap: 16px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      min-width: 0;
+    }
+    .step::before {
+      content: counter(step);
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: #fff;
+      font-weight: 700;
+    }
+    .code {
+      margin: 14px 0 0;
+      padding: 16px;
+      border-radius: var(--radius);
+      background: #111827;
+      color: #e8edf7;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 14px;
+      white-space: pre-wrap;
+      overflow-x: auto;
+    }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .table th, .table td {
+      border-bottom: 1px solid var(--line);
+      padding: 13px 14px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .table th { background: var(--soft); }
+    .table tr:last-child td { border-bottom: 0; }
+    .callout {
+      display: grid;
+      grid-template-columns: 4px 1fr;
+      gap: 16px;
+      padding: 18px;
+      background: #fff8ed;
+      border: 1px solid #f2d8aa;
+      border-radius: var(--radius);
+      min-width: 0;
+    }
+    .callout::before {
+      content: "";
+      background: var(--amber);
+      border-radius: 99px;
+    }
+    .source-list {
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      list-style: none;
+    }
+    .source-list li {
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+    }
+    footer {
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+      font-size: 14px;
+    }
+    @media (max-width: 760px) {
+      .hero { min-height: 82vh; background-position: center; }
+      .hero-inner { max-width: 390px; padding: 42px 20px 60px; }
+      main { max-width: 390px; padding: 38px 20px 70px; }
+      h1 { font-size: 38px; line-height: 1.08; }
+      h1 span { display: block; }
+      .lead { font-size: 17px; }
+      h2 { font-size: 25px; line-height: 1.26; }
+      h2 span { display: block; }
+      .hero-meta { display: grid; grid-template-columns: 1fr; }
+      .pill { width: 100%; }
+      .grid.three, .grid.two, .source-strip { grid-template-columns: 1fr; }
+      .step { grid-template-columns: 1fr; }
+      .step::before { width: 34px; height: 34px; }
+      .table { display: block; overflow-x: auto; }
+    }
+    @media (min-width: 761px) and (max-width: 1040px) {
+      h1 { font-size: 56px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">课程图文试制 · Codex App · 2026</div>
+      <h1><span>把 AI 编程</span><span>从聊天窗口</span><span>变成项目指挥台</span></h1>
+      <p class="lead">基于技术爬爬虾的 Codex App 课程，结合 OpenAI 官方资料，整理成一篇可放入学习平台的原创图文课。</p>
+      <div class="hero-meta">
+        <span class="pill">课程：38 分 13 秒</span>
+        <span class="pill">重点：Plan / Worktree / Skills / MCP</span>
+        <span class="pill">建议级别：Strong keep</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="source-strip">
+      <div>
+        <h2>先抓住核心：<span>Codex App 是“指挥中心”</span></h2>
+        <p>如果只把 Codex 当成“写代码的聊天框”，你会错过它真正的价值。它更像一个项目指挥台：你把任务、项目文件夹和约束交给它，它用线程、项目、计划模式、Worktree、Skills、MCP 和自动化，把想法拆成可以审核、测试和交付的工作。</p>
+        <div class="quote">学习策略：先会安全地让它读项目和写小改动，再学并行开发、Skills、MCP 和自动化。顺序反了，就很容易变成“装了很多能力，但不知道哪里出错”。</div>
+      </div>
+      <figure class="source-shot">
+        <img src="assets/screenshot-bilibili-codex-app.png" alt="B 站 Codex App 课程来源页面截图">
+      </figure>
+    </section>
+
+    <section>
+      <h2>这门课值得学什么</h2>
+      <div class="grid three">
+        <div class="card"><strong>1. App 形态</strong><small>不只 CLI，不只编辑器插件，而是一个能管理多个任务线程的桌面工作台。</small></div>
+        <div class="card"><strong>2. 计划模式</strong><small>复杂任务先拆解，再执行。适合网页、脚本、文档和 App 原型。</small></div>
+        <div class="card"><strong>3. Worktree</strong><small>多个方案并行试，不污染主分支，适合探索和重构。</small></div>
+        <div class="card"><strong>4. 代码管理</strong><small>看 diff、跑测试、写提交，把 AI 产出纳入正常工程流程。</small></div>
+        <div class="card"><strong>5. Skills</strong><small>把反复做的工作变成可复用能力，例如生成图文课、整理课程卡片。</small></div>
+        <div class="card"><strong>6. MCP / 自动化</strong><small>连接外部工具和周期任务，但建议在熟悉基础后再使用。</small></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>能力地图</h2>
+      <div class="diagram">
+        <img src="assets/diagram-codex-capability-map.png" alt="Codex App 能力地图手绘图">
+      </div>
+    </section>
+
+    <section>
+      <h2>标准工作流</h2>
+      <div class="diagram">
+        <img src="assets/diagram-codex-workflow.png" alt="Codex App 从任务到交付的手绘流程图">
+      </div>
+    </section>
+
+    <section>
+      <h2>跟做：第一天怎么用</h2>
+      <div class="steps">
+        <div class="step">
+          <div>
+            <h3>建一个安全项目文件夹</h3>
+            <p>不要一上来把整个电脑、公司仓库或重要项目交给 Codex。先建一个小文件夹，例如课程卡片网页、个人工具箱或文档整理实验。</p>
+            <div class="code">Codex-Lab/
+├── notes/
+├── website-demo/
+└── experiments/</div>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>创建 Thread，但先让它观察</h3>
+            <p>第一条提示词要让 Codex 先看项目，再提建议，最后等你批准。</p>
+            <div class="code">请先检查这个项目文件夹，告诉我里面有什么。
+然后提出一个你可以安全完成的小任务。
+在我确认之前，不要修改任何文件。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>复杂任务先开 Plan</h3>
+            <p>当任务超过 3 步，先让 Codex 输出计划、文件列表和验收标准。</p>
+            <div class="code">我想做一个“课程链接整理页面”。
+请先给出实现计划，包括页面结构、数据字段、需要创建的文件、验收标准。
+暂时不要写代码。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>看 diff，再决定是否提交</h3>
+            <p>重点看有没有改错文件、引入陌生依赖、写入密钥或破坏原有结构。AI 可以很快，但审核权必须在你手里。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>第二阶段再学 Skills 和 MCP</h3>
+            <p>Skills 适合把固定流程沉淀下来，MCP 适合接外部工具。不要一开始就堆能力，先把“读项目、拆任务、改代码、审 diff”跑顺。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>练习项目：课程卡片网页</h2>
+      <p>这个练习最贴近我们的学习平台：用 Codex 做一个静态网页，展示 AI 编程课程。</p>
+      <div class="code">请在当前文件夹里创建一个静态网页，用课程卡片展示这些 AI 编程课程。
+要求：
+1. 使用纯 HTML/CSS/JS，不要引入复杂框架。
+2. 页面有筛选按钮：全部、Codex、OpenClaw、Claude Code、Stitch。
+3. 每张卡片展示课程名、UP主、工具、难度、推荐理由和“打开课程”链接。
+4. 先给出文件计划，等我确认后再写代码。</div>
+      <div class="grid two" style="margin-top:16px">
+        <div class="card"><strong>验收 1</strong><small>双击 index.html 能打开，卡片不挤、不溢出。</small></div>
+        <div class="card"><strong>验收 2</strong><small>筛选按钮能工作，每个课程链接能跳转。</small></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>常见误区</h2>
+      <table class="table">
+        <thead><tr><th>误区</th><th>更好的做法</th></tr></thead>
+        <tbody>
+          <tr><td>一上来让它“做完整 App”</td><td>先让它写计划、文件列表和验收标准。</td></tr>
+          <tr><td>直接给全盘权限</td><td>只给项目文件夹，默认权限起步。</td></tr>
+          <tr><td>不看 diff 就提交</td><td>每次都看改了什么、能不能跑。</td></tr>
+          <tr><td>Skills、MCP、插件全装上</td><td>先学基础，再逐步加能力。</td></tr>
+          <tr><td>把 Codex 当替代程序员</td><td>把它当执行力很强、但需要审核的项目成员。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>来源与官方校验</h2>
+      <div class="callout">
+        <p>这篇图文课只引用课程链接和公开页面信息，正文是原创改写。具体功能入口和权限策略以 OpenAI 官方页面为准，因为 Codex App 在 2026 年仍在快速更新。</p>
+      </div>
+      <ul class="source-list">
+        <li><strong>B 站课程来源：</strong><a href="https://www.bilibili.com/video/BV1Kk9kBAEJv/">技术爬爬虾《Codex (APP) 保姆级全攻略》</a></li>
+        <li><strong>OpenAI Codex 产品页：</strong><a href="https://openai.com/codex/">Codex | AI Coding Partner from OpenAI</a></li>
+        <li><strong>Codex App 发布文：</strong><a href="https://openai.com/index/introducing-the-codex-app/">Introducing the Codex app</a></li>
+        <li><strong>OpenAI Academy 入门：</strong><a href="https://openai.com/academy/codex-how-to-start/">How to get started with Codex</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      本文生成于 2026-04-29。素材包括：B 站课程页截图、OpenAI 官方资料、原创 ImageGen 封面、Excalidraw 手绘流程图。
+    </footer>
+  </main>
+</body>
+</html>
